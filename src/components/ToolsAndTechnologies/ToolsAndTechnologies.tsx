@@ -1,618 +1,447 @@
 "use client";
 
 import React from "react";
+import styles from "../../styles/SalesBenefits.module.css";
 
 // Font Awesome Icons
-import {
-  FaReact,
-  FaAngular,
-  FaHtml5,
-  FaCss3Alt,
-  FaNodeJs,
-  FaPython,
-  FaJava,
-  FaGitAlt,
-  FaDocker,
-  FaAws,
-  FaFigma,
-  FaSwift,
-  FaCode,
-  FaVuejs,
-  FaCss3, // fallback
-} from "react-icons/fa";
+// ====================== FRONTEND DEVELOPMENT ======================
+import { FaReact, FaAngular, FaVuejs } from "react-icons/fa";
+import { SiNextdotjs, SiSvelte } from "react-icons/si";
 
-// Simple Icons
+// ====================== BACKEND DEVELOPMENT ======================
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress, SiDjango, SiFlask, SiLaravel } from "react-icons/si";
+
+// ====================== DATABASE TECHNOLOGIES ======================
 import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiBootstrap,
-  SiJavascript,
-  SiRedux,
   SiMongodb,
-  SiPostgresql,
   SiMysql,
+  SiPostgresql,
+  SiFirebase,
   SiRedis,
-  SiKubernetes,
+} from "react-icons/si";
+
+// ====================== CLOUD COMPUTING ======================
+import { FaAws } from "react-icons/fa";
+import {
+  SiGooglecloud,
+  SiHeroku,
+  SiDigitalocean,
+  SiCloudflare,
+} from "react-icons/si";
+
+// ====================== AI & MACHINE LEARNING ======================
+import {
   SiTensorflow,
   SiPytorch,
-  SiHuggingface,
+  SiScikitlearn,
   SiOpenai,
-  SiGooglecloud,
-  SiVuedotjs,
-  SiPostman,
-  SiFlutter,
-  SiKotlin,
-  SiCss3,
-  SiHtml5,
-  SiMaterialdesign,
-  SiExpress,
-  SiReact,
-  SiGit,
-  SiFigma,
+  SiKeras,
 } from "react-icons/si";
+
+// ====================== DEVOPS ======================
+import { FaDocker } from "react-icons/fa";
+import {
+  SiKubernetes,
+  SiJenkins,
+  SiGithubactions,
+  SiTerraform,
+} from "react-icons/si";
+
+// ====================== MOBILE APP DEVELOPMENT ======================
+import { FaSwift } from "react-icons/fa";
+import { SiFlutter, SiAndroidstudio, SiKotlin, SiIonic } from "react-icons/si";
+
+// ====================== CYBERSECURITY ======================
+import {
+  SiKalilinux,
+  SiMetasploit,
+  SiWireshark,
+  SiHackthebox,
+  SiBurpsuite,
+} from "react-icons/si";
+
+// ====================== DATA SCIENCE & ANALYTICS ======================
+import {
+  SiPandas,
+  SiNumpy,
+  SiApachespark,
+  SiTableau,
+  SiLooker,
+} from "react-icons/si";
+
+// ====================== DEVELOPMENT TOOLS & VERSION CONTROL ======================
+import { FaGitAlt } from "react-icons/fa";
+import { SiGithub, SiJetbrains, SiPostman, SiDocker } from "react-icons/si";
 
 export default function SalesBenefits() {
   return (
-    <section className="sales-benefits-section">
-      <style jsx>{`
-        .sales-benefits-section {
-          background: #000814;
-          min-height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 60px 20px;
-        }
+    <section className={styles.salesBenefitsSection}>
+      <div
+        className={`${styles.container} flex flex-col justify-items items-center`}
+      >
+        <div className="mb-0 text-center">
+          <h1 className="mb-4 text-3xl font-bold text-gray-600 md:text-4xl dark:text-gray-300">
+            Tools & Technologies
+          </h1>
+          <p className="mx-auto max-w-5xl text-lg leading-relaxed text-gray-600 dark:text-gray-400">
+            We combine advanced AI with a modern tech stack to build
+            intelligent, future-ready applications. From smart automation to
+            cloud solutions, we choose the right tools to make your ideas
+            smarter and more scalable.
+          </p>
+        </div>
 
-        @keyframes sales-orbPulse {
-          0%,
-          100% {
-            box-shadow:
-              0 0 80px rgba(37, 99, 235, 0.8),
-              0 0 120px rgba(37, 99, 235, 0.5),
-              inset 0 0 60px rgba(96, 165, 250, 0.3);
-          }
-          50% {
-            box-shadow:
-              0 0 100px rgba(37, 99, 235, 1),
-              0 0 140px rgba(37, 99, 235, 0.6),
-              inset 0 0 60px rgba(96, 165, 250, 0.4);
-          }
-        }
-
-        @keyframes sales-flowDown {
-          0% {
-            top: 0;
-            opacity: 0;
-          }
-          20% {
-            opacity: 1;
-          }
-          80% {
-            opacity: 1;
-          }
-          100% {
-            top: 100%;
-            opacity: 0;
-          }
-        }
-
-        .sales-benefits-section .container {
-          max-width: 1400px;
-          width: 100%;
-          position: relative;
-        }
-
-        .sales-benefits-section .orb-container {
-          display: flex;
-          justify-content: center;
-          margin-bottom: 0;
-          position: relative;
-          z-index: 10;
-        }
-
-        .sales-benefits-section .orb {
-          width: 80px;
-          height: 80px;
-          top: 80px;
-          border-radius: 50%;
-          background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-          box-shadow:
-            0 0 80px rgba(37, 99, 235, 0.8),
-            0 0 120px rgba(37, 99, 235, 0.5),
-            inset 0 0 60px rgba(96, 165, 250, 0.3);
-          animation: sales-orbPulse 3s ease-in-out infinite;
-        }
-
-        .sales-benefits-section .orb::before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          background: radial-gradient(
-            circle at 35% 25%,
-            rgba(255, 255, 255, 0.5) 0%,
-            transparent 50%
-          );
-        }
-
-        .sales-benefits-section .orb svg {
-          width: 42px;
-          height: 42px;
-          fill: white;
-          filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
-          z-index: 1;
-        }
-
-        .sales-benefits-section .connection-lines {
-          position: absolute;
-          top: 100px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 1200px;
-          height: 200px;
-          pointer-events: none;
-        }
-
-        .sales-benefits-section .vertical-line {
-          position: absolute;
-          left: 50%;
-          transform: transla8eX(-50%);
-          width: 1px;
-          height: 190px;
-          background: linear-gradient(
-            to bottom,
-            rgba(37, 99, 235, 0.6),
-            rgba(37, 99, 235, 0.3)
-          );
-          overflow: hidden;
-        }
-
-        .sales-benefits-section .vertical-line-1 {
-          position: absolute;
-          left: 47%;
-          top: -16px;
-          transform: transla8eX(-50%);
-          width: 1px;
-          height: 97px;
-          background: linear-gradient(
-            to bottom,
-            rgba(37, 99, 235, 0.6),
-            rgba(37, 99, 235, 0.3)
-          );
-          overflow: hidden;
-        }
-
-        .sales-benefits-section .vertical-line-2 {
-          position: absolute;
-          left: 53%;
-          top: -16px;
-          transform: transla8eX(-50%);
-          width: 1px;
-          height: 97px;
-          background: linear-gradient(
-            to bottom,
-            rgba(37, 99, 235, 0.6),
-            rgba(37, 99, 235, 0.3)
-          );
-          overflow: hidden;
-        }
-
-        .sales-benefits-section .vertical-line::after {
-          content: "";
-          position: absolute;
-          width: 3px;
-          height: 8px;
-          background: rgba(147, 197, 253, 0.9);
-          left: 50%;
-          transform: translateX(-50%);
-          border-radius: 2px;
-          animation: sales-flowDown 2s ease-in-out infinite;
-          box-shadow: 0 0 8px rgba(147, 197, 253, 0.8);
-        }
-
-        .sales-benefits-section .horizontal-line {
-          position: absolute;
-          top: 80px;
-          left: 0;
-          width: 585px;
-          right: 0;
-          height: 1px;
-          background: linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(37, 99, 235, 0.2) 10%,
-            rgba(37, 99, 235, 0.4) 50%,
-            rgba(37, 99, 235, 0.2) 90%,
-            transparent 100%
-          );
-        }
-
-        .sales-benefits-section .horizontal-line-1 {
-          position: absolute;
-          top: 80px;
-          left: 120;
-          width: 585px;
-          right: 0;
-          height: 1px;
-          background: linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(37, 99, 235, 0.2) 10%,
-            rgba(37, 99, 235, 0.4) 50%,
-            rgba(37, 99, 235, 0.2) 90%,
-            transparent 100%
-          );
-        }
-
-        .sales-benefits-section .branch-line {
-          position: absolute;
-          top: 80px;
-          width: 1px;
-          height: 100px;
-
-          background: linear-gradient(
-            to bottom,
-            rgba(37, 99, 235, 0.3),
-            rgba(37, 99, 235, 0.1)
-          );
-        }
-
-        .sales-benefits-section .branch-left {
-          left: 16%;
-        }
-        .sales-benefits-section .branch-center-left {
-          left: 50%;
-        }
-        .sales-benefits-section .branch-center-right {
-          right: 40%;
-        }
-        .sales-benefits-section .branch-right {
-          right: 16%;
-        }
-
-        .sales-benefits-section .grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 10px;
-          margin-bottom: 10px;
-          position: relative;
-          z-index: 1;
-          padding-top: 0px;
-        }
-
-        .sales-benefits-section .grid-bottom {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 10px;
-          max-width: 900px;
-          margin: 0 auto;
-          position: relative;
-          z-index: 1;
-        }
-
-        .sales-benefits-section .card {
-          background: linear-gradient(
-            180deg,
-            rgba(10, 20, 47, 0.6) 0%,
-            rgba(15, 25, 52, 0.4) 100%
-          );
-          border: 1px solid rgba(37, 99, 235, 0.15);
-          border-radius: 20px;
-          padding: 45px 35px;
-          text-align: center;
-          position: relative;
-          overflow: hidden;
-          transition: all 0.3s ease;
-          backdrop-filter: blur(8px);
-        }
-
-        .sales-benefits-section .card::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          height: 120px;
-          background: radial-gradient(
-            ellipse at top,
-            rgba(37, 99, 235, 0.08) 0%,
-            transparent 70%
-          );
-          opacity: 0;
-          transition: opacity 0.3s ease;
-        }
-
-        .sales-benefits-section .card:hover {
-          transform: translateY(-6px);
-          border-color: rgba(37, 99, 235, 0.35);
-          background: linear-gradient(
-            180deg,
-            rgba(10, 20, 47, 0.7) 0%,
-            rgba(15, 25, 52, 0.5) 100%
-          );
-        }
-
-        .sales-benefits-section .card:hover::before {
-          opacity: 1;
-        }
-
-        .sales-benefits-section .icon-wrapper {
-          width: 72px;
-          height: 72px;
-          margin: 0 auto 28px;
-          border-radius: 50%;
-          background: rgba(15, 25, 52, 0.8);
-          border: 1px solid rgba(37, 99, 235, 0.25);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-          transition: all 0.3s ease;
-        }
-
-        .sales-benefits-section .card:hover .icon-wrapper {
-          border-color: rgba(37, 99, 235, 0.5);
-          background: rgba(15, 25, 52, 1);
-        }
-
-        .sales-benefits-section .icon-wrapper::before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          background: radial-gradient(
-            circle at 35% 25%,
-            rgba(37, 99, 235, 0.15) 0%,
-            transparent 60%
-          );
-        }
-
-        .sales-benefits-section .icon-wrapper svg {
-          width: 28px;
-          height: 28px;
-          stroke: #60a5fa;
-          fill: none;
-          stroke-width: 2;
-          z-index: 1;
-          transition: all 0.3s ease;
-        }
-
-        .sales-benefits-section .card:hover .icon-wrapper svg {
-          stroke: #93c5fd;
-          transform: scale(1.05);
-        }
-
-        .sales-benefits-section .card h3 {
-          font-size: 26px;
-          font-weight: 600;
-          color: #f1f5f9;
-          margin-bottom: 16px;
-          letter-spacing: -0.3px;
-        }
-
-        .sales-benefits-section .card p {
-          font-size: 16px;
-          line-height: 1.65;
-          color: #94a3b8;
-          font-weight: 400;
-        }
-
-        .sales-benefits-section .hover-icons {
-          display: flex;
-          justify-content: center;
-          gap: 12px;
-          opacity: 0.04;
-          transform: translateY(10px);
-          transition: all 0.3s ease;
-        }
-
-        .sales-benefits-section .card:hover .hover-icons {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        @media (max-width: 1024px) {
-          .sales-benefits-section .grid {
-            grid-template-columns: 1fr;
-            padding-top: 0px;
-          }
-
-          .sales-benefits-section .grid-bottom {
-            grid-template-columns: 1fr;
-          }
-
-          .sales-benefits-section .connection-lines {
-            display: none;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .sales-benefits-section .card {
-            padding: 35px 25px;
-          }
-
-          .sales-benefits-section .card h3 {
-            font-size: 22px;
-          }
-
-          .sales-benefits-section .card p {
-            font-size: 15px;
-          }
-        }
-      `}</style>
-
-      <div className="container flex flex-col justify-items items-center">
-        <div className="orb-container">
-          <div className="orb">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M13.73 4L18.76 8.97V13.73L13.73 18.76H10.27L5.24 13.73V10.27L10.27 5.24H13.73L13.73 4Z"
-                fill="white"
-                opacity="0.9"
-              />
-              <path
-                d="M12 8L12 12L16 16"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                opacity="0.8"
-              />
+        <div className={styles.orbContainer}>
+          <div className={styles.orb}>
+            <svg
+              viewBox="0 0 24 24"
+              className="w-full h-full"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="12" y1="2" x2="12" y2="6"></line>
+              <line x1="12" y1="18" x2="12" y2="22"></line>
+              <line x1="2" y1="12" x2="6" y2="12"></line>
+              <line x1="18" y1="12" x2="22" y2="12"></line>
             </svg>
           </div>
         </div>
-        <div className="">
+
+        <div className={styles.imgWrapper}>
           <img
-            src="https://framerusercontent.com/images/7gAlhCkyadHMICtiDI2Q7eWIE.svg"
+            src="/images/stack/up-image3.png"
             alt=""
-            className="w-300 h-50"
+            className="w-230 h-60"
           />
         </div>
 
-        {/* <div className="connection-lines">
-          <div className="vertical-line"></div>
-          <div className="vertical-line-1"></div>
-          <div className="vertical-line-2"></div>
-          <div className="horizontal-line"></div>
-          <div className="horizontal-line-1"></div>
-          <div className="branch-line branch-left"></div>
-          <div className="branch-line branch-center-left"></div>
-          <div className="branch-line branch-right"></div>
-        </div> */}
-
-        <div className="grid">
-          <div className="card flex flex-col justify-items items-center">
-            <div className="icon-wrapper">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M6 9H4.5C3.12 9 2 10.12 2 11.5C2 12.88 3.12 14 4.5 14H6"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M18 9H19.5C20.88 9 22 10.12 22 11.5C22 12.88 20.88 14 19.5 14H18"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M12 2L14.5 7L20 7.5L16 11.5L17 17L12 14.5L7 17L8 11.5L4 7.5L9.5 7L12 2Z"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+        <div className={`${styles.grid} gap-1.5 px-5 z-1`}>
+          <div
+            className={`${styles.card} flex flex-col justify-items  items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="3" y="4" width="18" height="14" rx="2"></rect>
+                <line x1="8" y1="20" x2="16" y2="20"></line>
+                <line x1="12" y1="18" x2="12" y2="20"></line>
               </svg>
             </div>
-
-            {/* Hover icons container */}
+            <h1>Front-end</h1>
             <div className="icons-card">
-              <div className="flex flex-row justify-items items-center text-white gap-2  hover-icons">
-                <FaReact className="w-8 h-8" />
-                <SiNextdotjs className="w-8 h-8" />
-                <FaAngular className="w-8 h-8" />
-                <SiJavascript className="w-8 h-8" />
-                <SiTailwindcss className="w-8 h-8" />
-                <SiBootstrap className="w-8 h-8" />
-                <SiMongodb className="w-8 h-8" />
+              <div
+                className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+              >
+                <FaReact className="w-4 h-4" />
+                <FaAngular className="w-4 h-4" />
+                <FaVuejs className="w-4 h-4" />
+                <SiNextdotjs className="w-4 h-4" />
+                <SiSvelte className="w-4 h-4" />
               </div>
             </div>
           </div>
 
-          <div className="card flex flex-col justify-items items-center">
-            <div className="icon-wrapper">
-              <svg viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 6V12L16 14" />
+          <div
+            className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="6" rx="1"></rect>
+                <line x1="7" y1="6" x2="7" y2="6"></line>
+                <line x1="11" y1="6" x2="11" y2="6"></line>
+                <rect x="3" y="12" width="18" height="6" rx="1"></rect>
+                <line x1="7" y1="15" x2="7" y2="15"></line>
+                <line x1="11" y1="15" x2="11" y2="15"></line>
               </svg>
             </div>
 
-            <div className="flex flex-row justify-items items-center text-white gap-2  hover-icons">
-              <SiCss3 className="w-8 h-8" />
-              <SiHtml5 className="w-8 h-8" />
-              <FaCode className="w-8 h-8" />
-              <SiRedux className="w-8 h-8" />
-              <FaVuejs className="w-8 h-8" />
-              <FaAws className="w-8 h-8" />
-              <FaSwift className="w-8 h-8" />
+            <h1>Back-end</h1>
+
+            <div
+              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+            >
+              <FaNodeJs className="w-4 h-4" />
+              <SiExpress className="w-4 h-4" />
+              <SiDjango className="w-4 h-4" />
+              <SiFlask className="w-4 h-4" />
+              <SiLaravel className="w-4 h-4" />
             </div>
           </div>
 
-          <div className="card flex flex-col justify-items items-center">
-            <div className="icon-wrapper">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+          <div
+            className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
+                <path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"></path>
+                <path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"></path>
+                <path d="M4 19c0 1.66 3.58 3 8 3s8-1.34 8-3"></path>
               </svg>
             </div>
-            <div className="flex flex-row justify-items items-center text-white gap-2  hover-icons">
-              <FaNodeJs className="w-8 h-8" />
-              <FaPython className="w-8 h-8" />
-              <FaJava className="w-8 h-8" />
-              <SiExpress className="w-8 h-8" />
-              <SiReact className="w-8 h-8" />
-              <SiFlutter className="w-8 h-8" />
-              <SiKotlin className="w-8 h-8" />
+            <h1>Database</h1>
+            <div
+              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+            >
+              <SiMongodb className="w-4 h-4" />
+              <SiMysql className="w-4 h-4" />
+              <SiPostgresql className="w-4 h-4" />
+              <SiFirebase className="w-4 h-4" />
+              <SiRedis className="w-4 h-4" />
+            </div>
+          </div>
+
+          <div
+            className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M20 17.58A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 4 16.25"></path>
+                <path d="M16 16h2a4 4 0 0 0 0-8 4.5 4.5 0 0 0-4.5 4.5"></path>
+              </svg>
+            </div>
+            <h1>Cloud Computing</h1>
+            <div
+              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+            >
+              <FaAws className="w-4 h-4" />
+              <SiGooglecloud className="w-4 h-4" />
+              <SiHeroku className="w-4 h-4" />
+              <SiDigitalocean className="w-4 h-4" />
+              <SiCloudflare className="w-4 h-4" />
+            </div>
+          </div>
+
+          <div
+            className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="6" cy="6" r="1.5"></circle>
+                <circle cx="18" cy="6" r="1.5"></circle>
+                <circle cx="6" cy="18" r="1.5"></circle>
+                <circle cx="18" cy="18" r="1.5"></circle>
+                <circle cx="12" cy="12" r="1.5"></circle>
+
+                <line x1="6" y1="6" x2="12" y2="12"></line>
+                <line x1="18" y1="6" x2="12" y2="12"></line>
+                <line x1="6" y1="18" x2="12" y2="12"></line>
+                <line x1="18" y1="18" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h1>AI & ML</h1>
+            <div
+              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+            >
+              <SiTensorflow className="w-4 h-4" />
+              <SiPytorch className="w-4 h-4" />
+              <SiScikitlearn className="w-4 h-4" />
+              <SiOpenai className="w-4 h-4" />
+              <SiKeras className="w-4 h-4" />
             </div>
           </div>
         </div>
 
-        <div className="grid-bottom">
-          <div className="card flex flex-col justify-items items-center">
-            <div className="icon-wrapper">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M12 2L2 7L12 12L22 7L12 2Z"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M2 17L12 22L22 17"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M2 12L12 17L22 12"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+        <div className={`${styles.gridBottom} gap-1.5 mt-2`}>
+          <div
+            className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
               </svg>
             </div>
-            <div className="flex flex-row justify-items items-center text-white gap-2  hover-icons">
-              <SiGooglecloud className="w-8 h-8" />
-              <FaDocker className="w-8 h-8" />
-              <SiKubernetes className="w-8 h-8" />
-              <SiGit className="w-8 h-8" />
-              <FaCode className="w-8 h-8" />
-              <SiFigma className="w-8 h-8" />
-              <SiPostman className="w-8 h-8" />
+            <h1>Devops</h1>
+            <div
+              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+            >
+              <FaDocker className="w-4 h-4" />
+              <SiKubernetes className="w-4 h-4" />
+              <SiJenkins className="w-4 h-4" />
+              <SiGithubactions className="w-4 h-4" />
+              <SiTerraform className="w-4 h-4" />
             </div>
           </div>
 
-          <div className="card flex flex-col justify-items items-center">
-            <div className="icon-wrapper">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+          <div
+            className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="7" y="2" width="10" height="20" rx="2"></rect>
+
+                <circle cx="12" cy="18" r="1"></circle>
               </svg>
             </div>
-            <div className="flex flex-row justify-items items-center text-white gap-2  hover-icons">
-              <SiPostgresql className="w-8 h-8" />
-              <SiMysql className="w-8 h-8" />
-              <SiRedis className="w-8 h-8" />
-              <SiOpenai className="w-8 h-8" />
-              <SiTensorflow className="w-8 h-8" />
-              <SiPytorch className="w-8 h-8" />
-              <SiHuggingface className="w-8 h-8" />
+            <h1>Mobile App</h1>
+            <div
+              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+            >
+              <FaSwift className="w-4 h-4" />
+              <SiFlutter className="w-4 h-4" />
+              <SiAndroidstudio className="w-4 h-4" />
+              <SiKotlin className="w-4 h-4" />
+              <SiIonic className="w-4 h-4" />
+            </div>
+          </div>
+
+          <div
+            className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 2L4 5v6c0 5 4 9 8 9s8-4 8-9V5l-8-3z"></path>
+
+                <rect x="9" y="10" width="6" height="5" rx="1"></rect>
+                <path d="M12 10v-2"></path>
+              </svg>
+            </div>
+            <h1>Cybersecurity</h1>
+            <div
+              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+            >
+              <SiKalilinux className="w-4 h-4" />
+              <SiMetasploit className="w-4 h-4" />
+              <SiWireshark className="w-4 h-4" />
+              <SiHackthebox className="w-4 h-4" />
+              <SiBurpsuite className="w-4 h-4" />
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.gridBottom1} gap-1.5 mt-2`}>
+          <div
+            className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="3" y1="21" x2="21" y2="21"></line>
+                <line x1="3" y1="21" x2="3" y2="3"></line>
+
+                <polyline points="3,17 7,13 11,16 15,9 19,12"></polyline>
+
+                <circle cx="3" cy="17" r="1.5"></circle>
+                <circle cx="7" cy="13" r="1.5"></circle>
+                <circle cx="11" cy="16" r="1.5"></circle>
+                <circle cx="15" cy="9" r="1.5"></circle>
+                <circle cx="19" cy="12" r="1.5"></circle>
+              </svg>
+            </div>
+            <h1>Data Science & Analytics</h1>
+            <div
+              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+            >
+              <SiPandas className="w-4 h-4" />
+              <SiNumpy className="w-4 h-4" />
+              <SiApachespark className="w-4 h-4" />
+              <SiTableau className="w-4 h-4" />
+              <SiLooker className="w-4 h-4" />
+            </div>
+          </div>
+          <div
+            className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                <path d="M12 12l-4 4 4 4"></path>
+                <path d="M12 12l4-4-4-4"></path>
+              </svg>
+            </div>
+            <h1>Tools & Version Control</h1>
+            <div
+              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+            >
+              <FaGitAlt className="w-4 h-4" />
+              <SiGithub className="w-4 h-4" />
+              <SiJetbrains className="w-4 h-4" />
+              <SiPostman className="w-4 h-4" />
+              <SiDocker className="w-4 h-4" />
             </div>
           </div>
         </div>

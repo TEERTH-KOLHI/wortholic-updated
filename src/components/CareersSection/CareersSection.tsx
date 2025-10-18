@@ -104,7 +104,7 @@ export default function WhoWeAre() {
   ];
 
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 dark:text-gray-100 py-10 px-4 md:px-12 lg:px-1 transition-colors duration-300">
+    <section className="bg-white dark:bg-black dark:text-gray-100 py-10 px-4 md:px-12 lg:px-1 transition-colors duration-300">
       {/* Theme Toggle */}
 
       {/* Section Title */}
@@ -129,7 +129,7 @@ export default function WhoWeAre() {
                 whileHover={{ y: -6 }}
                 className="flex flex-col bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
-                <div className="p-8 flex flex-col justify-between items-center text-center flex-grow border border-gray-200 dark:border-gray-700">
+                <div className="p-8 flex flex-col justify-items gap-4 items-center text-center flex-grow border border-gray-200 dark:border-gray-700">
                   <Settings className="h-10 w-10 text-black dark:text-white" />
                   <h3 className="text-xl md:text-2xl text-black dark:text-white font-semibold max-w-[250px]">
                     {card.title}
