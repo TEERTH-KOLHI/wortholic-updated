@@ -106,7 +106,7 @@ export default function SalesBenefits() {
           <img
             src="/images/stack/up-image3.png"
             alt=""
-            className="w-230 h-60"
+            className="w-100 h-40 lg:w-230 lg:h-50 "
           />
         </div>
 
