@@ -40,7 +40,7 @@ const FeaturedWork = ({
       <div className={`flex flex-col  h-[2.5rem] sm:flex-row`}>
         {/* Feature Work Section */}
         <div
-          className={`w-full md:w-[15rem]  lg:w-[15rem] ${featuredTabBg} ${featureMargin} block border border-transparent rounded-tr-xl sm:rounded-tr-none p-4 dark:bg-black`}
+          className={`w-full md:w-[15rem]  lg:w-[15rem] ${featuredTabBg} ${featureMargin} block border border-transparent rounded-tr-xl sm:rounded-tr-none p-4 dark:bg-gray-900`}
         >
           <h1
             className={`text-[0.8rem] font-bold uppercase ${featuredTextColor} dark:text-gray-100`}
@@ -53,7 +53,7 @@ const FeaturedWork = ({
         {showSeeAll && (
           <>
             <div
-              className={`hidden sm:block w-[3rem] h-4 sm:h-auto pr-3 border border-transparent ${featuredTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)] dark:bg-black`}
+              className={`hidden sm:block w-[3rem] h-4 sm:h-auto pr-3 border border-transparent ${featuredTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)] dark:bg-gray-900`}
             ></div>
           </>
         )}
@@ -61,7 +61,7 @@ const FeaturedWork = ({
 
       {/* Content Section */}
       <div
-        className={`grid grid-cols-1 border-gray-400 lg:grid-cols-3 p-3 sm:p-3 ${contentBgColor} border-b border-dotted dark:bg-black dark:border-gray-600`}
+        className={`grid grid-cols-1 border-gray-400 lg:grid-cols-3 p-3 sm:p-3 ${contentBgColor} border-b border-dotted dark:bg-gray-900 dark:border-gray-600`}
       >
         <h2
           className={`text-[16px] ${featuredTextColor} sm:text-2xl text-black font-bold lg:text-[18px] leading-tight block font-Ovo dark:text-gray-100`}

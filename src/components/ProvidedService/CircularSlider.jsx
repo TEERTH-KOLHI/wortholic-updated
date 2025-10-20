@@ -214,7 +214,7 @@ export default function CircularSlider({
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center lg:h-[570px] bg-[#DFECEB] dark:bg-black pb-[100px] lg:pb-[150px] font-Ovo transition-colors duration-300">
+    <div className="flex flex-col items-center justify-center lg:h-[570px] bg-[#DFECEB] dark:bg-gray-900 pb-[100px] lg:pb-[150px] font-Ovo transition-colors duration-300">
       <div className="relative flex flex-col w-full max-w-[1400px] overflow-hidden">
         {/* For mobile view the boxes */}
         <div className="flex flex-col justify-items items-center mt-5 mb-5 w-full font-Ovo text-gray-200 text-[0.8rem] ml-0 block md:hidden">
