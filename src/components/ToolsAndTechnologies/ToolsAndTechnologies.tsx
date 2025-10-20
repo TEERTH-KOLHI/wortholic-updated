@@ -81,7 +81,7 @@ export default function SalesBenefits() {
         className={`${styles.container} flex flex-col justify-items items-center`}
       >
         <div className="mb-0 text-center">
-          <h1 className="mb-4 text-3xl font-bold text-gray-600 md:text-4xl dark:text-gray-300">
+          <h1 className="mb-4 text-2xl lg:text-5xl font-bold text-black md:text-5xl dark:text-gray-300">
             Tools & Technologies
           </h1>
           <p className="mx-auto max-w-5xl text-lg leading-relaxed text-gray-600 dark:text-gray-400">
