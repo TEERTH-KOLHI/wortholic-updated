@@ -22,13 +22,13 @@ const IndustriesPage = () => {
 
           {/* Image Container */}
           <div className="flex justify-center">
-            <div className="relative w-full max-w-[1000px]">
+            <div className="relative w-full max-w-full">
               <Image
-                src="/images/industrypage/industries-thumb.png"
+                src="/images/industrypage/industryPage.svg"
                 alt="Industry"
-                width={1000}
+                width={1200}
                 height={400}
-                className="mx-auto max-h-60 object-contain sm:max-h-72 md:max-h-96 dark:brightness-95 dark:invert"
+                className="mx-auto max-h-500 object-contain sm:max-h-200 md:max-h-500 dark:brightness-95 dark:invert"
                 priority
               />
             </div>
