@@ -43,7 +43,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative z-10 flex h-screen items-center overflow-hidden bg-white pt-[80px] pb-2 md:pt-[90px] xl:pt-[100px] 2xl:pt-[110px] dark:bg-black"
+      className="relative z-10 flex items-center overflow-hidden bg-white mt-10 pt-[80px] pb-2 md:pt-[90px] xl:pt-[100px] 2xl:pt-[110px] dark:bg-black"
     >
       {/* Background image */}
       <div
@@ -62,7 +62,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto flex h-full items-center px-4">
         <div className="mx-auto w-full max-w-full text-center">
           {/* Heading */}
-          <h1 className="mb-3 text-3xl leading-tight font-bold text-gray-900 sm:text-4xl md:text-5xl xl:mb-5 dark:text-white">
+          <h1 className="mb-3 text-2xl lg:text-5xl leading-tight font-bold text-gray-900 sm:text-4xl md:text-5xl xl:mb-5 dark:text-white">
             <span className="text-[#0E9F9F]">AI-Powered Automation &</span>{" "}
             Business<span className="block">Software Solutions</span>
           </h1>
@@ -94,7 +94,19 @@ const Hero = () => {
 
             {/* Middle Content */}
             <div className="max-w-full text-center">
-              <div className="w-[620px]">
+              {/* For mobile view only */}
+              <div className="w-full flex flex-items items-center text-center block md:hidden">
+                <p className="mb-4 text-[12px] text-gray-700 xl:mb-6 dark:text-gray-300">
+                  At Wortholic, we build smart and secure AI-powered solutions
+                  from web & mobile apps to business automation, CRM
+                  integrations, and custom AI products. Our mission is simple:
+                  help businesses work faster, smarter, and scale with
+                  confidence.
+                </p>
+              </div>
+
+              {/* For Desktop/tablet view only */}
+              <div className="w-[620px] flex flex-items items-center text-center hidden md:block">
                 <p className="mb-4 text-[15px] text-gray-700 xl:mb-6 dark:text-gray-300">
                   At Wortholic, we build smart and secure AI-powered solutions
                   from <br /> web & mobile apps to business automation, CRM
@@ -108,7 +120,7 @@ const Hero = () => {
               <div className="flex flex-wrap justify-center gap-2">
                 <button
                   onClick={handleScrollToContact}
-                  className="flex cursor-pointer items-center justify-center rounded border-1 border-[#0E9F9F] bg-[#0E9F9F] px-4 py-1 font-medium text-white shadow-md transition duration-300 hover:bg-white hover:text-[#0E9F9F] dark:hover:bg-black"
+                  className="flex cursor-pointer items-center justify-center rounded-[8px] border-1 border-[#0E9F9F] bg-[#0E9F9F] px-4 py-2 font-medium text-white shadow-md transition duration-300 hover:bg-white hover:text-[#0E9F9F] dark:hover:bg-black"
                 >
                   Get Started <ArrowRight className="ml-2 h-4 w-4" />
                 </button>
@@ -117,7 +129,7 @@ const Hero = () => {
                   href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Meeting%20with%20Wortholic&details=Let's%20discuss%20your%20project%20requirements%20and%20how%20we%20can%20help%20with%20AI-powered%20solutions&add=wortholicai@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center rounded border-1 border-[#1FA6C7] bg-[#1FA6C7] px-4 py-1 font-medium text-white shadow-md transition duration-300 hover:bg-white hover:text-[#1FA6C7] dark:hover:bg-black"
+                  className="flex items-center justify-center rounded-[8px] border-1 border-[#1FA6C7] bg-[#1FA6C7] px-4 py-2 font-medium text-white shadow-md transition duration-300 hover:bg-white hover:text-[#1FA6C7] dark:hover:bg-black"
                 >
                   Schedule a Meeting
                 </a>

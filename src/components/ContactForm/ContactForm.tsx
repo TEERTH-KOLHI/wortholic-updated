@@ -20,9 +20,11 @@ const ContactForm = () => {
   const [showSuccess, setShowSuccess] = useState(false);
   const [error, setError] = useState("");
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -31,10 +33,10 @@ const ContactForm = () => {
     setError("");
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
@@ -72,7 +74,7 @@ const ContactForm = () => {
         {/* Right Form Section */}
         <div className="flex w-full items-center justify-center border border-gray-300 bg-white p-6 md:w-1/2 md:p-8 dark:border-0 dark:bg-gray-900">
           <div className="w-full max-w-lg">
-            <h2 className="mb-6 text-sm leading-relaxed font-normal text-[#333] md:mb-8 md:text-base dark:text-gray-300">
+            <h2 className="mb-6 text-sm text-center leading-relaxed font-normal text-[#333] md:mb-8 md:text-base dark:text-gray-300">
               We are here to build your software project and help you succeed
               &amp; grow your business.
             </h2>
@@ -190,7 +192,8 @@ const ContactForm = () => {
                 Message Sent Successfully!
               </h3>
               <p className="text-gray-600 mb-6 dark:text-gray-300">
-                Thank you for contacting us. We&apos;ve received your message and will get back to you soon.
+                Thank you for contacting us. We&apos;ve received your message
+                and will get back to you soon.
               </p>
               <button
                 onClick={() => setShowSuccess(false)}

@@ -112,7 +112,7 @@ export default function WhoWeAre() {
         <h2 className="text-center text-gray-800 dark:text-gray-100 text-3xl md:text-5xl font-bold mb-0">
           Who we are
         </h2>
-        <p className="text-gray-600 dark:text-gray-300">
+        <p className="text-gray-600 text-center dark:text-gray-300">
           We build AI agents, AI-powered SaaS, and advanced digital solutions
           that go beyond traditional apps.
         </p>

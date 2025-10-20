@@ -214,11 +214,38 @@ export default function CircularSlider({
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-[570px] bg-[#DFECEB] dark:bg-black pb-[150px] font-Ovo transition-colors duration-300">
+    <div className="flex flex-col items-center justify-center lg:h-[570px] bg-[#DFECEB] dark:bg-black pb-[100px] lg:pb-[150px] font-Ovo transition-colors duration-300">
       <div className="relative flex flex-col w-full max-w-[1400px] overflow-hidden">
+        {/* For mobile view the boxes */}
+        <div className="flex flex-col justify-items items-center mt-5 mb-5 w-full font-Ovo text-gray-200 text-[0.8rem] ml-0 block md:hidden">
+          <div className="flex flex-col gap-3 mt-0 max-w-sm">
+            {features.map((feature, idx) => {
+              const IconComponent = feature.icon;
+              return (
+                <div
+                  key={idx}
+                  className="flex items-start gap-3 border-2 border-[#0F5C60] bg-[#0F5C60] rounded-lg p-3 dark:bg-transparent"
+                >
+                  <div className="flex-shrink-0">
+                    <IconComponent className="w-6 h-6 text-cyan-500" />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <h2 className="font-semibold text-white text-sm">
+                      {feature.title}
+                    </h2>
+                    <p className="text-white text-xs leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
         <div className="flex gap-1 justify-center items-center preserve-3d">
           <div className="flex flex-col justifiy-items items-center h-[400px] w-[600px] font-Ovo text-gray-200 text-[0.8rem] ml-5 hidden md:block">
-            <div className="flex flex-col gap-3 mt-20 max-w-sm">
+            <div className="flex flex-col gap-3 mt-0 lg:mt-20 max-w-sm">
               {features.map((feature, idx) => {
                 const IconComponent = feature.icon;
                 return (
@@ -265,7 +292,7 @@ export default function CircularSlider({
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 src={card.img}
                 alt={`Card ${index + 1}`}
-                className="w-full bg-cover lg:h-[300px] md:h-[420px] sm:h-[420px] xs:h-[220px] z-[1] rounded-lg overflow-hidden"
+                className="w-full bg-cover lg:h-[300px] md:h-[420px] sm:h-[420px] xs:h-[360px] z-[1] rounded-lg overflow-hidden"
               />
 
               <div className="absolute inset-0 backdrop-blur-[1px] bg-opacity-70 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity z-[2] rounded-lg">
@@ -303,7 +330,7 @@ export default function CircularSlider({
           </button>
         </div>
       </div>
-      <div className="flex flex-row text-[12px] justify-items items-center gap-2 ml-0 lg: ml-[23rem]">
+      <div className="flex flex-row text-[12px] justify-items items-center gap-2 ml-0 lg:ml-[23rem]">
         <button className="border-2 border-[#0F5C60] rounded-[6px] px-6 py-1.5 dark:bg-transparent">
           Learn More
         </button>
