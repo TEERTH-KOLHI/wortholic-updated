@@ -205,13 +205,31 @@ export default function CircularSlider({
   };
 
   useEffect(() => {
+    const startAutoSlide = () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+      intervalRef.current = setInterval(() => {
+        setCurrentIndex((prev) => {
+          if (prev < cardsData.length - 3) {
+            return prev + 1;
+          } else {
+            if (intervalRef.current) {
+              clearInterval(intervalRef.current);
+            }
+            return prev;
+          }
+        });
+      }, 9000);
+    };
+
     startAutoSlide();
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
     };
-  }, []);
+  }, [cardsData.length]);
 
   return (
     <div className="flex flex-col items-center justify-center lg:h-[570px] bg-[#DFECEB] dark:bg-gray-900 pb-[100px] lg:pb-[150px] font-Ovo transition-colors duration-300">

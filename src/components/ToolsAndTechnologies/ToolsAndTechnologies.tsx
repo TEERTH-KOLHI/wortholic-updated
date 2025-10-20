@@ -2,6 +2,7 @@
 
 import React from "react";
 import styles from "../../styles/SalesBenefits.module.css";
+import Image from "next/image";
 
 // Font Awesome Icons
 // ====================== FRONTEND DEVELOPMENT ======================
@@ -94,19 +95,24 @@ export default function SalesBenefits() {
 
         <div className={styles.orbContainer}>
           <div className={styles.orb}>
-            <img
+            <Image
               src="/images/stack/center.gif"
               alt=""
+              width={200}
+              height={200}
               className="w-full h-full object-cover"
+              unoptimized // Add this for GIFs to prevent optimization issues
             />
           </div>
         </div>
 
         <div className={styles.imgWrapper}>
-          <img
+          <Image
             src="/images/stack/up-image3.png"
             alt=""
-            className="w-100 h-40 lg:w-230 lg:h-50 "
+            width={230}
+            height={50}
+            className="w-100 h-40 lg:w-230 lg:h-50"
           />
         </div>
 

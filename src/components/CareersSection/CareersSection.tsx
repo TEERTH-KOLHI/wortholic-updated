@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Settings, Shield, Heart, Globe, Cpu, Sun, Moon } from "lucide-react";
 
@@ -139,10 +140,12 @@ export default function WhoWeAre() {
                     solutions.
                   </p>
                 </div>
-                <img
+                <Image
                   src={card.img}
                   alt={card.title}
                   className="w-full h-52 object-cover"
+                  width={400}
+                  height={208}
                 />
               </motion.div>
             );
@@ -179,14 +182,19 @@ export default function WhoWeAre() {
           // Image Only
           if (card.type === "imageOnly") {
             return (
-              <motion.img
+              <motion.div
                 key={card.id}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
-                src={card.img}
-                alt="Departments"
-                className="rounded-2xl object-cover w-full h-[540px]"
-              />
+                className="relative rounded-2xl overflow-hidden w-full h-[540px]"
+              >
+                <Image
+                  src={card.img}
+                  alt="Departments"
+                  className="rounded-2xl object-cover"
+                  fill
+                />
+              </motion.div>
             );
           }
 
@@ -217,10 +225,12 @@ export default function WhoWeAre() {
                       Smart suggestions, reviews, and debugging.
                     </p>
                   </div>
-                  <img
+                  <Image
                     src="/images/who-we-are/5+.png"
                     alt="5+"
                     className="w-full h-52 object-cover"
+                    width={400}
+                    height={208}
                   />
                 </motion.div>
               </div>
