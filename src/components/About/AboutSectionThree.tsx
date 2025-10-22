@@ -47,7 +47,7 @@ export default function AboutSectionThree() {
         {/* Right Side: Image */}
         <div className="flex justify-center md:w-1/2">
           <Image
-            src="/images/about/aboutus-img.png"
+            src="/images/about/about-img.png"
             alt="About Us"
             width={500}
             height={400}
