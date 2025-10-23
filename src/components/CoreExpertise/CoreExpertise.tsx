@@ -46,7 +46,7 @@ const CoreExpertise = () => {
               alt=""
               width={230}
               height={50}
-              className="w-[230px] h-[50px] lg:w-[730px] lg:h-[200px]"
+              className="w-[230px] h-[150px] lg:w-[730px] lg:h-[200px]"
             />
           </div>
 
