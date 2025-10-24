@@ -58,7 +58,7 @@ const ContactForm = () => {
     <>
       <div id="contact-form" className="mb-3 flex h-auto flex-col md:flex-row">
         {/* Left Banner Section */}
-        <div className="relative flex w-full items-center justify-center bg-gray-100 p-8 md:flex md:w-1/2 dark:bg-gray-800 overflow-hidden">
+        <div className="relative flex w-full items-center border justify-center bg-gray-50 p-8 md:flex md:w-1/2 dark:bg-gray-800 overflow-hidden">
           {/* Background Logo */}
           <div
             className="absolute bg-contain bg-no-repeat opacity-20"

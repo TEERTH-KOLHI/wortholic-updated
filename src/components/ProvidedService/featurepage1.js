@@ -21,7 +21,7 @@ export const featuredWork1 = {
 export const featuredWork2 = {
   topBgColor: "none",
   contentBgColor: "bg-[#DFECEB]",
-  featuredTabBg: "bg-[#DFECEB]",
+  featuredTabBg: "bg-[#D0E2E1]",
   featuredTextColor: "text-black",
   seeAllTabBg: "bg-[#DFECEB]",
   seeAllTextColor: "text-black",
@@ -38,7 +38,7 @@ export const featuredWork2 = {
 export const featuredWork3 = {
   topBgColor: "none",
   contentBgColor: "bg-[#DFECEB]",
-  featuredTabBg: "bg-[#DFECEB]",
+  featuredTabBg: "bg-[#B6DAD8]",
   featuredTextColor: "text-black",
   seeAllTabBg: "bg-[#DFECEB]",
   seeAllTextColor: "text-black",
@@ -54,7 +54,7 @@ export const featuredWork3 = {
 export const featuredWork4 = {
   topBgColor: "none",
   contentBgColor: "bg-[#DFECEB]",
-  featuredTabBg: "bg-[#DFECEB]",
+  featuredTabBg: "bg-[#94CBC7]",
   featuredTextColor: "text-black",
   seeAllTabBg: "bg-[#DFECEB]",
   seeAllTextColor: "text-black",
@@ -70,7 +70,7 @@ export const featuredWork4 = {
 export const featuredWork5 = {
   topBgColor: "none",
   contentBgColor: "bg-[#DFECEB]",
-  featuredTabBg: "bg-[#DFECEB]",
+  featuredTabBg: "bg-[#7EBDB9]",
   featuredTextColor: "text-black",
   seeAllTabBg: "bg-[#DFECEB]",
   seeAllTextColor: "text-black",
@@ -86,7 +86,7 @@ export const featuredWork5 = {
 export const featuredWork6 = {
   topBgColor: "none",
   contentBgColor: "bg-[#DFECEB]",
-  featuredTabBg: "bg-[#DFECEB]",
+  featuredTabBg: "bg-[#67ABA6]",
   featuredTextColor: "text-black",
   seeAllTabBg: "bg-[#DFECEB]",
   seeAllTextColor: "text-black",
@@ -102,7 +102,7 @@ export const featuredWork6 = {
 export const featuredWork7 = {
   topBgColor: "none",
   contentBgColor: "bg-[#DFECEB]",
-  featuredTabBg: "bg-[#DFECEB]",
+  featuredTabBg: "bg-[#5AA7A2]",
   featuredTextColor: "text-black",
   seeAllTabBg: "bg-[#DFECEB]",
   seeAllTextColor: "text-black",
