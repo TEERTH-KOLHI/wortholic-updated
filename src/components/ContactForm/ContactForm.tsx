@@ -58,7 +58,21 @@ const ContactForm = () => {
     <>
       <div id="contact-form" className="mb-3 flex h-auto flex-col md:flex-row">
         {/* Left Banner Section */}
-        <div className="relative flex w-full items-center justify-center bg-gray-100 p-8 md:flex md:w-1/2 dark:bg-gray-800">
+        <div className="relative flex w-full items-center justify-center bg-gray-100 p-8 md:flex md:w-1/2 dark:bg-gray-800 overflow-hidden">
+          {/* Background Logo */}
+          <div
+            className="absolute bg-contain bg-no-repeat opacity-20"
+            style={{
+              backgroundImage: "url('/images/logo/Wortholic.png')",
+              width: "660px",
+              height: "550px",
+              top: "70px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              zIndex: 0,
+            }}
+          ></div>
+
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center text-center">
             <FiMessageSquare className="mb-6 h-16 w-16 text-black md:h-20 md:w-20 dark:text-white" />
