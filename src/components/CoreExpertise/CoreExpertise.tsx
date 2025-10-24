@@ -52,8 +52,8 @@ const CoreExpertise = () => {
 
           {/* First Row - 3 Cards */}
 
-          <div className="mb-5 flex justify-center">
-            <div className="grid grid-cols-1 gap-5 md:grid-cols-3 max-w-4xl w-full">
+          <div className="mb-3 flex justify-center">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-3 max-w-4xl w-full">
               {/* Custom Web & Mobile App Development */}
               <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#EAF3FF] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
                 <svg
@@ -126,8 +126,8 @@ const CoreExpertise = () => {
           </div>
 
           {/* Second Row - 2 Cards */}
-          <div className="mb-5 flex justify-center">
-            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 max-w-2xl w-full">
+          <div className="mb-3 flex justify-center">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2 max-w-2xl w-full">
               {/* SaaS & Cloud-Native Applications */}
               <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#EAF3FF] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
                 <svg
