@@ -88,7 +88,7 @@ const Portfolio = () => {
   return (
     <div className="mt-20 min-h-screen">
       {/* Header */}
-      <HeroParallax />
+      {/* <HeroParallax /> */}
       <div className="mt-15 py-1 text-center">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 md:text-4xl dark:text-gray-100">
           Portfolio
