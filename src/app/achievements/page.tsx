@@ -13,14 +13,14 @@ import {
 
 const Achievements = () => {
   return (
-    <main className="bg-white text-gray-800">
+    <main className="bg-white text-gray-800 dark:bg-[#0b0f14] dark:text-gray-200 transition-colors duration-300">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex flex-col items-center justify-center text-center bg-gradient-to-br from-[#2E4864] via-[#2E4864] to-[#203449] text-white px-6">
+      <section className="relative h-[60vh] flex flex-col items-center justify-center text-center bg-gradient-to-br from-[#2E4864] via-[#2E4864] to-[#203449] text-white dark:from-[#10151d] dark:via-[#121a26] dark:to-[#0d131b] px-6 transition-colors duration-300">
         <div className="relative z-10">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
             Our Achievements
           </h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#e0e7ef]">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#e0e7ef] dark:text-gray-300">
             A journey of innovation, excellence, and trust — celebrating the
             milestones that shaped Wortholic.
           </p>
@@ -28,7 +28,7 @@ const Achievements = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-[#111820] transition-colors duration-300">
         <div className="max-w-6xl mx-auto grid md:grid-cols-4 sm:grid-cols-2 gap-10 text-center px-6">
           {[
             { icon: Briefcase, num: "500+", text: "Projects Delivered" },
@@ -38,13 +38,15 @@ const Achievements = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-white p-8 shadow-md hover:shadow-2xl transition rounded-2xl"
+              className="bg-white dark:bg-[#18222e] p-8 shadow-md hover:shadow-2xl dark:shadow-none transition rounded-2xl"
             >
-              <item.icon className="mx-auto mb-4 h-10 w-10 text-[#2E4864]" />
-              <h2 className="text-4xl font-extrabold text-[#2E4864]">
+              <item.icon className="mx-auto mb-4 h-10 w-10 text-[#2E4864] dark:text-[#5c9cff]" />
+              <h2 className="text-4xl font-extrabold text-[#2E4864] dark:text-[#5c9cff]">
                 {item.num}
               </h2>
-              <p className="mt-2 text-gray-700">{item.text}</p>
+              <p className="mt-2 text-gray-700 dark:text-gray-300">
+                {item.text}
+              </p>
             </div>
           ))}
         </div>
@@ -52,10 +54,10 @@ const Achievements = () => {
 
       {/* Timeline Section */}
       <section className="py-20 max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-10 text-[#2E4864]">
+        <h2 className="text-3xl font-bold text-center mb-10 text-[#2E4864] dark:text-[#5c9cff]">
           Milestone Timeline
         </h2>
-        <div className="relative border-l-4 border-[#2E4864] pl-8 space-y-10">
+        <div className="relative border-l-4 border-[#2E4864] dark:border-[#5c9cff] pl-8 space-y-10">
           {[
             {
               year: "2021",
@@ -84,22 +86,24 @@ const Achievements = () => {
             },
           ].map((item, i) => (
             <div key={i} className="relative">
-              <div className="absolute -left-4 top-2 w-4 h-4 bg-[#2E4864] rounded-full"></div>
+              <div className="absolute -left-4 top-2 w-4 h-4 bg-[#2E4864] dark:bg-[#5c9cff] rounded-full"></div>
               <div className="flex items-center gap-3">
-                <item.icon className="h-6 w-6 text-[#2E4864]" />
-                <h3 className="text-xl font-semibold text-[#2E4864]">
+                <item.icon className="h-6 w-6 text-[#2E4864] dark:text-[#5c9cff]" />
+                <h3 className="text-xl font-semibold text-[#2E4864] dark:text-[#5c9cff]">
                   {item.year}
                 </h3>
               </div>
-              <p className="text-gray-700 mt-1">{item.desc}</p>
+              <p className="text-gray-700 dark:text-gray-300 mt-1">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Recognition Section */}
-      <section className="py-20 bg-gray-50 text-center px-6">
-        <h2 className="text-3xl font-bold mb-8 text-[#2E4864]">
+      <section className="py-20 bg-gray-50 dark:bg-[#111820] text-center px-6 transition-colors duration-300">
+        <h2 className="text-3xl font-bold mb-8 text-[#2E4864] dark:text-[#5c9cff]">
           Recognitions & Highlights
         </h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -122,20 +126,20 @@ const Achievements = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition"
+              className="bg-white dark:bg-[#18222e] p-8 rounded-2xl shadow-md hover:shadow-xl transition"
             >
-              <item.icon className="mx-auto mb-4 h-10 w-10 text-[#2E4864]" />
-              <h3 className="text-xl font-semibold mb-2 text-[#2E4864]">
+              <item.icon className="mx-auto mb-4 h-10 w-10 text-[#2E4864] dark:text-[#5c9cff]" />
+              <h3 className="text-xl font-semibold mb-2 text-[#2E4864] dark:text-[#5c9cff]">
                 {item.title}
               </h3>
-              <p className="text-gray-600">{item.desc}</p>
+              <p className="text-gray-600 dark:text-gray-300">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-24 bg-[#2E4864] text-white text-center px-6">
+      <section className="py-24 bg-[#2E4864] dark:bg-[#10151d] text-white text-center px-6 transition-colors duration-300">
         <div className="max-w-3xl mx-auto">
           <blockquote className="text-2xl md:text-3xl italic font-light">
             “Partnering with Wortholic accelerated our AI transformation — their
@@ -149,16 +153,16 @@ const Achievements = () => {
 
       {/* CTA Section */}
       <section className="py-20 text-center px-6">
-        <h2 className="text-3xl font-bold mb-4 text-[#2E4864]">
+        <h2 className="text-3xl font-bold mb-4 text-[#2E4864] dark:text-[#5c9cff]">
           Let’s Achieve More Together
         </h2>
-        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+        <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
           Join hands with Wortholic to build AI-driven solutions that redefine
           success.
         </p>
         <a
           href="/contact"
-          className="bg-[#2E4864] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#22364b] transition"
+          className="bg-[#2E4864] dark:bg-[#5c9cff] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#22364b] dark:hover:bg-[#4882d6] transition"
         >
           Schedule a Meeting
         </a>
