@@ -323,7 +323,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   max-width: 900px;
-  margin: 0 auto;
+  margin-bottom: 10px;
   position: relative;
   z-index: 1;
 }

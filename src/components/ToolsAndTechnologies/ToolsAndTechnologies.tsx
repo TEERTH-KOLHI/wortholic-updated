@@ -280,6 +280,42 @@ export default function SalesBenefits() {
               <SiKeras className="w-4 h-4" />
             </div>
           </div>
+
+          <div
+            className={`${styles.card} flex md:hidden flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
+          >
+            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-full h-full"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="6" cy="6" r="1.5"></circle>
+                <circle cx="18" cy="6" r="1.5"></circle>
+                <circle cx="6" cy="18" r="1.5"></circle>
+                <circle cx="18" cy="18" r="1.5"></circle>
+                <circle cx="12" cy="12" r="1.5"></circle>
+                <line x1="6" y1="6" x2="12" y2="12"></line>
+                <line x1="18" y1="6" x2="12" y2="12"></line>
+                <line x1="6" y1="18" x2="12" y2="12"></line>
+                <line x1="18" y1="18" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h1>Tools & Version Control</h1>
+            <div
+              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+            >
+              <FaGitAlt className="w-4 h-4" />
+              <SiGithub className="w-4 h-4" />
+              <SiJetbrains className="w-4 h-4" />
+              <SiPostman className="w-4 h-4" />
+              <SiDocker className="w-4 h-4" />
+            </div>
+          </div>
         </div>
 
         <div className={`${styles.gridBottom} gap-1.5 mt-2`}>
@@ -411,33 +447,37 @@ export default function SalesBenefits() {
               <SiLooker className="w-4 h-4" />
             </div>
           </div>
-          <div
-            className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
-          >
-            <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
-              <svg
-                viewBox="0 0 24 24"
-                className="w-full h-full"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                <path d="M12 12l-4 4 4 4"></path>
-                <path d="M12 12l4-4-4-4"></path>
-              </svg>
-            </div>
-            <h1>Tools & Version Control</h1>
+
+          {/* 👇 Wrapper controls visibility */}
+          <div className="hidden md:block">
             <div
-              className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+              className={`${styles.card} flex flex-col justify-items items-center p-0.5 rounded-sm shadow-sm hover:shadow-md transition-all`}
             >
-              <FaGitAlt className="w-4 h-4" />
-              <SiGithub className="w-4 h-4" />
-              <SiJetbrains className="w-4 h-4" />
-              <SiPostman className="w-4 h-4" />
-              <SiDocker className="w-4 h-4" />
+              <div className={`${styles.iconWrapper} w-7 h-7 mb-0.5`}>
+                <svg
+                  viewBox="0 0 24 24"
+                  className="w-full h-full"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  <path d="M12 12l-4 4 4 4"></path>
+                  <path d="M12 12l4-4-4-4"></path>
+                </svg>
+              </div>
+              <h1>Tools & Version Control</h1>
+              <div
+                className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
+              >
+                <FaGitAlt className="w-4 h-4" />
+                <SiGithub className="w-4 h-4" />
+                <SiJetbrains className="w-4 h-4" />
+                <SiPostman className="w-4 h-4" />
+                <SiDocker className="w-4 h-4" />
+              </div>
             </div>
           </div>
         </div>
