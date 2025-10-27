@@ -294,15 +294,9 @@ export default function SalesBenefits() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <circle cx="6" cy="6" r="1.5"></circle>
-                <circle cx="18" cy="6" r="1.5"></circle>
-                <circle cx="6" cy="18" r="1.5"></circle>
-                <circle cx="18" cy="18" r="1.5"></circle>
-                <circle cx="12" cy="12" r="1.5"></circle>
-                <line x1="6" y1="6" x2="12" y2="12"></line>
-                <line x1="18" y1="6" x2="12" y2="12"></line>
-                <line x1="6" y1="18" x2="12" y2="12"></line>
-                <line x1="18" y1="18" x2="12" y2="12"></line>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                <path d="M12 12l-4 4 4 4"></path>
+                <path d="M12 12l4-4-4-4"></path>
               </svg>
             </div>
             <h1>Tools & Version Control</h1>
@@ -336,7 +330,7 @@ export default function SalesBenefits() {
                 <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
               </svg>
             </div>
-            <h1>Devops</h1>
+            <h1>DevOps Tools</h1>
             <div
               className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
             >
@@ -366,7 +360,7 @@ export default function SalesBenefits() {
                 <circle cx="12" cy="18" r="1"></circle>
               </svg>
             </div>
-            <h1>Mobile App</h1>
+            <h1>Mobile Applications</h1>
             <div
               className={`${styles.hoverIcons} flex flex-row justify-center items-center gap-0.25`}
             >

@@ -55,7 +55,7 @@ const CoreExpertise = () => {
           <div className="mb-3 flex justify-center">
             <div className="grid grid-cols-1 gap-3 md:grid-cols-3 max-w-4xl w-full">
               {/* Custom Web & Mobile App Development */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#EAF3FF] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
@@ -78,7 +78,7 @@ const CoreExpertise = () => {
               </div>
 
               {/* AI & Machine Learning Solutions */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#EAF3FF] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
@@ -101,7 +101,7 @@ const CoreExpertise = () => {
               </div>
 
               {/* ERP, CRM & Workflow Systems */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#EAF3FF] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
@@ -129,7 +129,7 @@ const CoreExpertise = () => {
           <div className="mb-3 flex justify-center">
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2 max-w-2xl w-full">
               {/* SaaS & Cloud-Native Applications */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#EAF3FF] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
@@ -152,7 +152,7 @@ const CoreExpertise = () => {
               </div>
 
               {/* API-First & Cross-Platform Development */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#EAF3FF] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
@@ -180,7 +180,7 @@ const CoreExpertise = () => {
           <div className="flex justify-center">
             <div className="max-w-xs w-full">
               {/* Software Maintenance & Support */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#EAF3FF] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              <div className="flex flex-col items-center text-center rounded-xl border border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
