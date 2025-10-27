@@ -182,7 +182,7 @@ export default function CircularSlider({
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => Math.min(prev + 1, cardsData.length - 3));
+    setCurrentIndex((prev) => Math.min(prev + 1, cardsData.length - 1));
     startAutoSlide();
   };
 
@@ -259,10 +259,80 @@ export default function CircularSlider({
               );
             })}
           </div>
+
+          {/* Mobile Only View */}
+          <div className="flex md:hidden flex-col items-center justify-center w-full py-3 overflow-hidden">
+            {/* <h2 className="text-white text-lg font-semibold mb-4">
+              Our Features
+            </h2> */}
+            {/* Centered Slider with Side Navigation */}
+            <div className="relative w-full flex items-center justify-center px-4">
+              {/* Left Arrow */}
+              <button
+                onClick={handlePrev}
+                disabled={currentIndex === 0}
+                className="absolute left-2 z-10 p-2 bg-white/90 dark:bg-gray-800 rounded-full shadow hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-50 transition-colors duration-200"
+              >
+                <ChevronLeft className="w-5 h-5 text-gray-700 dark:text-gray-200" />
+              </button>
+
+              {/* Slider Container */}
+              <div className="w-full max-w-sm h-auto overflow-hidden">
+                <motion.div
+                  className="flex"
+                  animate={{ x: -currentIndex * 100 + "%" }}
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                >
+                  {cardsData.map((card, index) => (
+                    <div
+                      key={index}
+                      className="flex-shrink-0 w-full h-[450px] rounded-xl overflow-hidden relative cursor-pointer border border-gray-700"
+                      onClick={() => window.open(card.link)}
+                    >
+                      {/* Image */}
+                      <motion.img
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4 }}
+                        src={card.img}
+                        alt={card.title}
+                        className="object-cover w-full h-[380px] rounded-xl"
+                      />
+                      {/* Overlay Text */}
+                      <div className="absolute bottom-0 left-0 right-0 bg-gray-900/70 backdrop-blur-md p-4 h-[100px]">
+                        <h3 className="text-white text-sm font-bold mb-1 text-center">
+                          {card.title}
+                        </h3>
+                        <p className="text-gray-300 text-xs text-center line-clamp-2">
+                          {card.desc}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </motion.div>
+              </div>
+
+              {/* Right Arrow */}
+              <button
+                onClick={handleNext}
+                disabled={currentIndex >= cardsData.length - 1}
+                className="absolute right-2 z-10 p-2 bg-white/90 dark:bg-gray-800 rounded-full shadow hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-50 transition-colors duration-200"
+              >
+                <ChevronRight className="w-5 h-5 text-gray-700 dark:text-gray-200" />
+              </button>
+            </div>
+
+            {/* Page Indicator */}
+            {/* <div className="flex justify-center items-center mt-4">
+              <span className="text-black text-sm">
+                {currentIndex + 1} / {cardsData.length}
+              </span>
+            </div> */}
+          </div>
         </div>
 
-        <div className="flex gap-1 justify-center items-center preserve-3d">
-          <div className="flex flex-col justifiy-items items-center h-[400px] w-[600px] font-Ovo text-gray-200 text-[0.8rem] ml-5 hidden md:block">
+        <div className="hidden md:flex gap-1 justify-center items-center preserve-3d">
+          <div className="flex flex-col justifiy-items items-center h-[400px] w-[600px] font-Ovo text-gray-200 text-[0.8rem] ml-5">
             <div className="flex flex-col gap-3 mt-0 lg:mt-20 max-w-sm">
               {features.map((feature, idx) => {
                 const IconComponent = feature.icon;
@@ -327,7 +397,7 @@ export default function CircularSlider({
                   borderBottomLeftRadius: 30,
                 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="absolute top-0 left-[0px] right-0 mt-[280px] backdrop-blur-md pb-[130px] p-6 max-w-[300px] hidden md:block min-w-[100px] z-[1001] text-center bg-gray-800/50"
+                className="absolute top-0 left-[0px] right-0 mt-[280px] backdrop-blur-md pb-[130px] p-6 max-w-[300px] min-w-[100px] z-[1001] text-center bg-gray-800/50"
               >
                 <h2 className="text-[16px] font-black text-gray-100 mb-6">
                   {card.title}
