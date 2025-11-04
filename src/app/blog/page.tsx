@@ -19,7 +19,10 @@ const Blog = () => {
         description="Stay updated with the latest software development trends, AI innovations, and technology insights from our expert team at Wortholic."
       />
 
-      <section className="pt-[120px] pb-[10px]">
+      <section className="pt-[20px] pb-[10px]">
+        <div className="flex items-center justify-center mt-10 mb-5">
+          <h1 className="text-3xl font-semibold">Our Latest Blogs</h1>
+        </div>
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             {blogData.map((blog) => (
