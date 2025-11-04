@@ -101,8 +101,8 @@ const Portfolio = () => {
     <div className="mt-20 min-h-screen">
       {/* Header */}
       {/* <HeroParallax /> */}
-      <div className="mt-15 py-1 text-center">
-        <h1 className="mb-3 text-3xl font-bold text-gray-900 md:text-4xl dark:text-gray-100">
+      <div className="mt-30 py-1 text-center">
+        <h1 className=" mb-5 text-3xl font-bold text-gray-900 md:text-4xl dark:text-gray-100">
           Portfolio
         </h1>
         {/* <p className="mx-auto max-w-6xl px-4 pb-2 text-gray-600 dark:text-gray-300">
@@ -112,7 +112,7 @@ const Portfolio = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="relative h-[120vh] mt-10">
+      <div className="relative h-[120vh]">
         <FeaturedWork
           {...featuredWork1}
           cardsData={cardsDataByPage[0]}
