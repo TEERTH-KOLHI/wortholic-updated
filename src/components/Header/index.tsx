@@ -93,10 +93,36 @@ const Header = () => {
                 {menuItem.submenu ? (
                   <>
                     {/* Menu item with submenu */}
-                    {menuItem.path ? (
-                      <Link
-                        href={menuItem.path}
-                        className={`flex items-center py-2 text-base transition-colors duration-150 ${
+                    <div className="flex items-center">
+                      {/* Desktop: Link that works on hover */}
+                      {menuItem.path && (
+                        <Link
+                          href={menuItem.path}
+                          className={`hidden lg:flex items-center py-2 text-base transition-colors duration-150 ${
+                            pathname === menuItem.path
+                              ? "text-blue-600 dark:text-blue-500"
+                              : "text-gray-700 hover:text-blue-600 dark:text-white/70 dark:hover:text-blue-500"
+                          }`}
+                        >
+                          {menuItem.title}
+                          <svg
+                            className="ml-2 h-4 w-4 transform transition-transform duration-200 lg:group-hover:rotate-180"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 011.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                            />
+                          </svg>
+                        </Link>
+                      )}
+
+                      {/* Mobile: Button that toggles dropdown */}
+                      <button
+                        onClick={() => toggleSubmenu(index)}
+                        className={`flex lg:hidden w-full items-center py-2 text-base transition-colors duration-150 ${
                           pathname === menuItem.path
                             ? "text-blue-600 dark:text-blue-500"
                             : "text-gray-700 hover:text-blue-600 dark:text-white/70 dark:hover:text-blue-500"
@@ -106,27 +132,7 @@ const Header = () => {
                         <svg
                           className={`ml-2 h-4 w-4 transform transition-transform duration-200 ${
                             openIndex === index ? "rotate-180" : ""
-                          } lg:group-hover:rotate-180`}
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 011.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                          />
-                        </svg>
-                      </Link>
-                    ) : (
-                      <button
-                        onClick={() => toggleSubmenu(index)}
-                        className="flex w-full items-center py-2 text-base text-gray-700 transition-colors duration-150 hover:text-blue-600 lg:w-auto dark:text-white/70 dark:hover:text-blue-500"
-                      >
-                        {menuItem.title}
-                        <svg
-                          className={`ml-2 h-4 w-4 transform transition-transform duration-200 ${
-                            openIndex === index ? "rotate-180" : ""
-                          } lg:group-hover:rotate-180`}
+                          }`}
                           viewBox="0 0 20 20"
                           fill="currentColor"
                         >
@@ -137,12 +143,36 @@ const Header = () => {
                           />
                         </svg>
                       </button>
-                    )}
+
+                      {/* If no path, show button for both mobile and desktop */}
+                      {!menuItem.path && (
+                        <button
+                          onClick={() => toggleSubmenu(index)}
+                          className="hidden lg:flex w-full items-center py-2 text-base text-gray-700 transition-colors duration-150 hover:text-blue-600 lg:w-auto dark:text-white/70 dark:hover:text-blue-500"
+                        >
+                          {menuItem.title}
+                          <svg
+                            className={`ml-2 h-4 w-4 transform transition-transform duration-200 ${
+                              openIndex === index ? "rotate-180" : ""
+                            } lg:group-hover:rotate-180`}
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 011.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                            />
+                          </svg>
+                        </button>
+                      )}
+                    </div>
+
                     {/* Dropdown menu */}
                     <div
                       className={`${
                         openIndex === index ? "block" : "hidden"
-                      } mt-2 w-56 rounded-md bg-white p-3 shadow-md lg:absolute lg:left-0 lg:z-20 lg:mt-0 lg:hidden lg:pt-3 lg:transition-all lg:duration-200 lg:group-hover:block dark:bg-black dark:shadow-lg`}
+                      } mt-2 w-full lg:w-56 rounded-md bg-white p-3 shadow-md lg:absolute lg:left-0 lg:z-20 lg:mt-0 lg:hidden lg:pt-3 lg:transition-all lg:duration-200 lg:group-hover:block dark:bg-black dark:shadow-lg`}
                     >
                       {menuItem.submenu.map((submenuItem) => (
                         <Link
