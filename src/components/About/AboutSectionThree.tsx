@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function AboutSectionThree() {
   return (
-    <section className="bg-white px-6 py-16 md:px-16 dark:bg-[#111111]">
-      <div className="container mx-auto flex flex-col items-center gap-12 md:flex-row">
+    <section className="bg-white px-6 py-0 md:px-16 dark:bg-[#111111]">
+      <div className="container mx-auto flex flex-col items-center gap-0 md:flex-col">
         {/* Left Side: Text */}
-        <div className="md:w-1/2">
+        {/* <div className="md:w-1/2 text-center">
           <h2 className="mb-6 text-3xl font-bold text-black md:text-4xl dark:text-[#ffffff]">
             Our Story
           </h2>
@@ -42,16 +42,16 @@ export default function AboutSectionThree() {
             where businesses find custom, future-ready digital solutions that
             grow with them.
           </p>
-        </div>
+        </div> */}
 
         {/* Right Side: Image */}
-        <div className="flex justify-center md:w-1/2">
+        <div className="flex justify-center">
           <Image
             src="/images/about/about-img.png"
             alt="About Us"
-            width={500}
-            height={400}
-            className="h-auto w-full max-w-md dark:brightness-90"
+            width={1200}
+            height={600}
+            className="mx-auto max-h-500 object-contain sm:max-h-200 md:max-h-500 dark:brightness-94 dark:invert"
           />
         </div>
       </div>

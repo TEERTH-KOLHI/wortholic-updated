@@ -47,7 +47,7 @@ const AboutSectionFour = () => {
   ];
 
   return (
-    <section className="bg-white px-6 py-16 md:px-16 dark:bg-gray-900">
+    <section className="bg-white flex flex-col justify-items items-center text-center px-6 py-8 md:px-16 dark:bg-black">
       {/* Heading */}
       <h2 className="mb-6 text-3xl font-bold text-black md:text-4xl dark:text-white">
         Why Wortholic?
@@ -55,24 +55,15 @@ const AboutSectionFour = () => {
 
       {/* Paragraph */}
       <p className="mb-10 max-w-5xl text-gray-800 dark:text-gray-300">
-        Do you care for your business growth OR are looking for a launchpad for
-        your startup? Look no further and allow us to be the backbone of your IT
-        services. Wortholic is a total IT solution provider with focus on
-        business & commercial applications. We provide highly efficient services
-        for development of custom web applications, database solutions and
-        mobile applications. Our clients have utilized our solutions for the
-        betterment of their processes and have met the standards of the
-        ever-evolving challenges of the software industry. We have successfully
-        delivered solutions to major countries like USA (California, New York,
-        Florida, Chicago, Ohio, Texas, New Jersey, Connecticut, Oklahoma,
-        Virginia, Washington, Georgia, Colorado) Belgium, France, United Kingdom
-        (UK), Ireland, Germany, Canada, Australia, Hong Kong, Netherlands,
-        Norway, Singapore, Japan, South Africa, Finland etc. We believe in
-        actions and that is the reason we are always the preferred go-to team.
+        Want to grow your business or launch your startup? Wortholic provides
+        complete IT solutions including web, database, and mobile app
+        development. We help businesses streamline operations and stay
+        competitive. With clients across the USA, UK, Europe, and beyond,
+        Wortholic is trusted worldwide for reliable results.
       </p>
 
       {/* Features Grid */}
-      <div className="mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {features.map((item, index) => (
           <div
             key={index}

@@ -57,14 +57,16 @@ const AboutSectionOne: React.FC = () => {
   };
 
   return (
-    <div className="relative overflow-hidden bg-white px-4 py-16 text-black sm:px-6 lg:px-8 dark:bg-gray-900 dark:text-white">
-      <div className="absolute inset-0 bg-white dark:bg-gray-900"></div>
+    <div className="relative overflow-hidden bg-white px-4 py-6 text-black sm:px-6 lg:px-8 dark:bg-black dark:text-white">
+      <div className="absolute inset-0 bg-white dark:bg-black"></div>
 
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Heading and description (left aligned) */}
-        <div className="mb-12 text-left">
-          <h2 className="mb-4 text-3xl font-bold md:text-4xl">About Wortholic</h2>
-          <p className="max-w-2xl text-xl text-gray-600 dark:text-gray-300">
+        <div className="mb-12 flex flex-col justify-items items-center text-center">
+          <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+            About Wortholic
+          </h2>
+          <p className="max-w-2xl text-xl text-center text-gray-600 dark:text-gray-300">
             Discover our journey in providing premium software services and AI
             solutions with a team of 100+ experienced professionals.
           </p>

@@ -344,11 +344,16 @@
 }
 
 :global(.dark) .card {
-  border-color: rgba(29, 116, 122, 0.4);
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-color: rgba(29, 116, 122, 0.5); /* stronger border */
+  background: linear-gradient(
+    135deg,
+    rgba(29, 116, 122, 0.3) 0%,
+    rgba(19, 85, 90, 0.3) 100%
+  ); /* transparent gradient to match Tailwind's */
   box-shadow:
-    0 8px 32px rgba(29, 116, 122, 0.2),
-    inset 0 0 20px rgba(29, 116, 122, 0.08);
+    0 8px 32px rgba(29, 116, 122, 0.4),
+    inset 0 0 20px rgba(29, 116, 122, 0.1);
+  color: #e0f2f1; /* lighter text */
 }
 
 .card::before {

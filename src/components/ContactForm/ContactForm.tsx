@@ -61,7 +61,7 @@ const ContactForm = () => {
         <div className="relative flex w-full items-center border justify-center bg-gray-50 p-8 md:flex md:w-1/2 dark:bg-gray-800 overflow-hidden">
           {/* Background Logo */}
           <div
-            className="absolute bg-contain bg-no-repeat opacity-20"
+            className="absolute bg-contain bg-no-repeat opacity-8"
             style={{
               backgroundImage: "url('/images/logo/Wortholic.png')",
               width: "660px",

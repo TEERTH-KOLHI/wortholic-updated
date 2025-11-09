@@ -120,13 +120,13 @@ export const cardsDataByPage = [
     {
       title: "talkpal",
       desc: "Description for talk pal ",
-      img: "/images/cards/card1.jpeg",
+      img: "/images/cards/talkpal.png",
       link: "https://app.talkpal.ai/",
     },
     {
       title: "bitext",
       desc: "Description for bitext",
-      img: "/images/cards/card2.jpeg",
+      img: "/images/cards/bitext.png",
       link: "https://www.bitext.com/",
     },
     {
@@ -138,7 +138,7 @@ export const cardsDataByPage = [
     {
       title: "2 play",
       desc: "Description for 2 play",
-      img: "/images/cards/card1aiprod.jpeg",
+      img: "/images/cards/card2play.png",
       link: "https://www.2play.com/",
     },
   ],
@@ -147,14 +147,14 @@ export const cardsDataByPage = [
     {
       title: "troveo ai",
       desc: "Description for troveo",
-      img: "/images/cards/card1aiprod.jpeg",
+      img: "/images/cards/troveoai.png",
       link: "https://www.troveo.ai/",
     },
     {
-      title: "Vultron ",
-      desc: " Generative AI platform revolutionizing federal proposal development for government contractors, backed by Craft Ventures and Long Journey Ventures.",
+      title: "naturalflow ai",
+      desc: "Transform your business with AI agents.",
       img: "/images/cards/card5.jpeg",
-      link: "...",
+      link: "https://www.naturalflow.ai/",
     },
     {
       title: "Athlead ai",
@@ -168,19 +168,19 @@ export const cardsDataByPage = [
     {
       title: "OptimusAI",
       desc: "AI/ML solutions provider (website under development - likely enterprise AI solutions",
-      img: "/images/cards/card3aiprod.jpeg",
-      link: "http://www.optimusai.com",
+      img: "/images/cards/optimusai.png",
+      link: "https://optimusai.ai/",
     },
     {
       title: "Atom",
       desc: "Description for Atom",
-      img: "/images/cards/card1ml.jpeg",
-      link: "https://www.atom.com/name/Vultron",
+      img: "/images/cards/atom.png",
+      link: "https://www.atom.com/",
     },
     {
       title: "Beam",
       desc: "the platform automates workflows with an advanced AI agent platform to reduce operational cost and create leverage",
-      img: "/images/cards/beam.jpeg",
+      img: "/images/cards/beam.png",
       link: "https://beam.ai/",
     },
   ],
@@ -189,7 +189,7 @@ export const cardsDataByPage = [
     {
       title: "Keap",
       desc: "Keap (formerly Infusionsoft) offers all-in-one CRM, sales, and marketing automation for small businesses—helping entrepreneurs manage leads, send automated campaigns, and close more deals.",
-      img: "/images/cards/keep.jpeg",
+      img: "/images/cards/keap.png",
       link: "https://keap.com/",
     },
     {
@@ -210,7 +210,7 @@ export const cardsDataByPage = [
     {
       title: "EdAI",
       desc: "Offers workshops and professional development for educators, focusing on generative AI.",
-      img: "/images/cards/edai.jpeg",
+      img: "/images/cards/edai.png",
       link: "https://edai.site/",
     },
     {
@@ -222,7 +222,7 @@ export const cardsDataByPage = [
     {
       title: "Ed Safe",
       desc: "Global alliance focusing on creating a safer, more equitable, and trusted AI education ecosystem. Works on research, policy, and practice to ensure AI deployed in learning is ethical, equitable, and transparent.",
-      img: "/images/cards/edsafe.jpeg",
+      img: "/images/cards/edsafe.png",
       link: "https://www.edsafeai.org/",
     },
   ],
@@ -231,8 +231,8 @@ export const cardsDataByPage = [
     {
       title: "TechLink ",
       desc: "TechLink appears to be either IT Staffing & Consulting Service",
-      img: "/images/cards/card1aiprod.jpeg",
-      link: "https://www.techlink.com/",
+      img: "/images/cards/techlink.png",
+      link: "https://www.gditrading.com/",
     },
     {
       title: "Athlead.ai",
@@ -243,8 +243,8 @@ export const cardsDataByPage = [
     {
       title: "OpsF I",
       desc: " Financial operations platform (website under construction",
-      img: "/images/cards/card4.jpeg",
-      link: "https://www.opsfi.com/",
+      img: "/images/cards/opsfi.png",
+      link: "https://opsfi.co/",
     },
   ],
 

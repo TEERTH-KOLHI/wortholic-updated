@@ -171,7 +171,7 @@ const AboutSectionFive: React.FC = () => {
   );
 
   return (
-    <div className="bg-gray-100 px-4 py-16 font-sans dark:bg-black">
+    <div className="bg-gray-100 px-4 py-6 font-sans dark:bg-black">
       <h1 className="mb-12 text-center text-4xl font-extrabold text-gray-900 dark:text-gray-100">
         What People Are Saying
       </h1>
@@ -251,16 +251,16 @@ const AboutSectionFive: React.FC = () => {
       </section>
 
       {/* Divider */}
-      <div className="mx-auto my-16 max-w-6xl border-t border-gray-300 dark:border-gray-700"></div>
+      <div className="mx-auto my-6 max-w-6xl border-t border-gray-300 dark:border-gray-700"></div>
 
       {/* Awards */}
-      <section className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+      {/* <section className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-center gap-8 py-12">
           {awards.map((award, index) => (
             <AwardBadge key={index} {...award} />
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

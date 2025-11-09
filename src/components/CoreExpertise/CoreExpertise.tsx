@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+
 const CoreExpertise = () => {
   return (
     <section className="bg-white/60 px-8 py-16 backdrop-blur-md transition-colors duration-300 dark:bg-black/60">
@@ -17,8 +18,7 @@ const CoreExpertise = () => {
           </p>
         </div>
 
-        {/* here */}
-
+        {/* Animated orb and top image */}
         <div className="flex flex-col justify-items items-center">
           <div className="flex justify-center mb-0 relative z-10">
             <div
@@ -51,11 +51,25 @@ const CoreExpertise = () => {
           </div>
 
           {/* First Row - 3 Cards */}
-
           <div className="mb-3 flex justify-center">
             <div className="grid grid-cols-1 gap-3 md:grid-cols-3 max-w-4xl w-full">
-              {/* Custom Web & Mobile App Development */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-2 border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              {/* Card 1 */}
+              <div
+                className="
+                  flex flex-col items-center text-center 
+                  rounded-[20px] 
+                  border 
+                  border-[rgba(29,116,122,0.15)] 
+                  bg-gradient-to-br from-[#f8fffe] to-[#f0faf8] 
+                  shadow-[0_8px_32px_rgba(29,116,122,0.1),_inset_0_0_20px_rgba(29,116,122,0.04)] 
+                  p-5
+                  transition-all duration-300 ease-in-out
+                  hover:scale-[1.02] hover:shadow-lg
+                  dark:bg-gradient-to-br dark:from-[#1d747a]/30 dark:to-[#13555a]/30
+                  dark:border-[rgba(29,116,122,0.5)]
+                  dark:shadow-[0_8px_32px_rgba(29,116,122,0.4),_inset_0_0_20px_rgba(29,116,122,0.1)]
+                "
+              >
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
@@ -77,8 +91,23 @@ const CoreExpertise = () => {
                 </p>
               </div>
 
-              {/* AI & Machine Learning Solutions */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-2 border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              {/* Card 2 */}
+              <div
+                className="
+                  flex flex-col items-center text-center 
+                  rounded-[20px] 
+                  border 
+                  border-[rgba(29,116,122,0.15)] 
+                  bg-gradient-to-br from-[#f8fffe] to-[#f0faf8] 
+                  shadow-[0_8px_32px_rgba(29,116,122,0.1),_inset_0_0_20px_rgba(29,116,122,0.04)] 
+                  p-5
+                  transition-all duration-300 ease-in-out
+                  hover:scale-[1.02] hover:shadow-lg
+                  dark:bg-gradient-to-br dark:from-[#1d747a]/30 dark:to-[#13555a]/30
+                  dark:border-[rgba(29,116,122,0.5)]
+                  dark:shadow-[0_8px_32px_rgba(29,116,122,0.4),_inset_0_0_20px_rgba(29,116,122,0.1)]
+                "
+              >
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
@@ -100,8 +129,23 @@ const CoreExpertise = () => {
                 </p>
               </div>
 
-              {/* ERP, CRM & Workflow Systems */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-2 border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              {/* Card 3 */}
+              <div
+                className="
+                  flex flex-col items-center text-center 
+                  rounded-[20px] 
+                  border 
+                  border-[rgba(29,116,122,0.15)] 
+                  bg-gradient-to-br from-[#f8fffe] to-[#f0faf8] 
+                  shadow-[0_8px_32px_rgba(29,116,122,0.1),_inset_0_0_20px_rgba(29,116,122,0.04)] 
+                  p-5
+                  transition-all duration-300 ease-in-out
+                  hover:scale-[1.02] hover:shadow-lg
+                  dark:bg-gradient-to-br dark:from-[#1d747a]/30 dark:to-[#13555a]/30
+                  dark:border-[rgba(29,116,122,0.5)]
+                  dark:shadow-[0_8px_32px_rgba(29,116,122,0.4),_inset_0_0_20px_rgba(29,116,122,0.1)]
+                "
+              >
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
@@ -128,8 +172,23 @@ const CoreExpertise = () => {
           {/* Second Row - 2 Cards */}
           <div className="mb-3 flex justify-center">
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2 max-w-2xl w-full">
-              {/* SaaS & Cloud-Native Applications */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-2 border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              {/* Card 4 */}
+              <div
+                className="
+                  flex flex-col items-center text-center 
+                  rounded-[20px] 
+                  border 
+                  border-[rgba(29,116,122,0.15)] 
+                  bg-gradient-to-br from-[#f8fffe] to-[#f0faf8] 
+                  shadow-[0_8px_32px_rgba(29,116,122,0.1),_inset_0_0_20px_rgba(29,116,122,0.04)] 
+                  p-5
+                  transition-all duration-300 ease-in-out
+                  hover:scale-[1.02] hover:shadow-lg
+                  dark:bg-gradient-to-br dark:from-[#1d747a]/30 dark:to-[#13555a]/30
+                  dark:border-[rgba(29,116,122,0.5)]
+                  dark:shadow-[0_8px_32px_rgba(29,116,122,0.4),_inset_0_0_20px_rgba(29,116,122,0.1)]
+                "
+              >
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
@@ -151,8 +210,23 @@ const CoreExpertise = () => {
                 </p>
               </div>
 
-              {/* API-First & Cross-Platform Development */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-2 border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              {/* Card 5 */}
+              <div
+                className="
+                  flex flex-col items-center text-center 
+                  rounded-[20px] 
+                  border 
+                  border-[rgba(29,116,122,0.15)] 
+                  bg-gradient-to-br from-[#f8fffe] to-[#f0faf8] 
+                  shadow-[0_8px_32px_rgba(29,116,122,0.1),_inset_0_0_20px_rgba(29,116,122,0.04)] 
+                  p-5
+                  transition-all duration-300 ease-in-out
+                  hover:scale-[1.02] hover:shadow-lg
+                  dark:bg-gradient-to-br dark:from-[#1d747a]/30 dark:to-[#13555a]/30
+                  dark:border-[rgba(29,116,122,0.5)]
+                  dark:shadow-[0_8px_32px_rgba(29,116,122,0.4),_inset_0_0_20px_rgba(29,116,122,0.1)]
+                "
+              >
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
@@ -179,8 +253,23 @@ const CoreExpertise = () => {
           {/* Third Row - 1 Card Centered */}
           <div className="flex justify-center">
             <div className="max-w-xs w-full">
-              {/* Software Maintenance & Support */}
-              <div className="flex flex-col items-center text-center rounded-xl border border-2 border-gray-200 bg-[#f8fffe] p-5 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-lg dark:border-white/20 dark:bg-white/10">
+              {/* Card 6 */}
+              <div
+                className="
+                  flex flex-col items-center text-center 
+                  rounded-[20px] 
+                  border 
+                  border-[rgba(29,116,122,0.15)] 
+                  bg-gradient-to-br from-[#f8fffe] to-[#f0faf8] 
+                  shadow-[0_8px_32px_rgba(29,116,122,0.1),_inset_0_0_20px_rgba(29,116,122,0.04)] 
+                  p-5
+                  transition-all duration-300 ease-in-out
+                  hover:scale-[1.02] hover:shadow-lg
+                  dark:bg-gradient-to-br dark:from-[#1d747a]/30 dark:to-[#13555a]/30
+                  dark:border-[rgba(29,116,122,0.5)]
+                  dark:shadow-[0_8px_32px_rgba(29,116,122,0.4),_inset_0_0_20px_rgba(29,116,122,0.1)]
+                "
+              >
                 <svg
                   className="h-10 w-10 mb-3 text-black dark:text-white"
                   fill="none"
