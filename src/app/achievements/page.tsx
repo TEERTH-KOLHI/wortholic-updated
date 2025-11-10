@@ -6,167 +6,226 @@ import {
   Users,
   Briefcase,
   CheckCircle2,
-  Target,
   Star,
-  Rocket,
 } from "lucide-react";
 
 const Achievements = () => {
   return (
-    <main className="bg-white text-gray-800 dark:bg-[#0b0f14] dark:text-gray-200 transition-colors duration-300">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] flex flex-col items-center justify-center text-center bg-gradient-to-br from-[#2E4864] via-[#2E4864] to-[#203449] text-white dark:from-[#10151d] dark:via-[#121a26] dark:to-[#0d131b] px-6 transition-colors duration-300">
-        <div className="relative z-10">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
-            Our Achievements
+    <main className="bg-white text-gray-800 dark:bg-[#0b0f14] dark:text-gray-200 transition-colors duration-300 min-h-screen py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-40">
+          <h1 className="text-4xl md:text-4xl font-bold text-black dark:text-gray-300 mb-4">
+            Company Achievements
           </h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#e0e7ef] dark:text-gray-300">
-            A journey of innovation, excellence, and trust — celebrating the
-            milestones that shaped Wortholic.
-          </p>
+          {/* <p className="text-gray-600 dark:text-gray-400 italic">
+            This slide shows some business achievements over a period like Most
+            Respected Company, Increased Global Sales, New Stores Opened etc.
+          </p> */}
         </div>
-      </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-gray-50 dark:bg-[#111820] transition-colors duration-300">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-4 sm:grid-cols-2 gap-10 text-center px-6">
-          {[
-            { icon: Briefcase, num: "500+", text: "Projects Delivered" },
-            { icon: Users, num: "300M+", text: "End-users Impacted" },
-            { icon: Globe, num: "50+", text: "Countries Served" },
-            { icon: CheckCircle2, num: "95%", text: "Client Retention Rate" },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="bg-white dark:bg-[#18222e] p-8 shadow-md hover:shadow-2xl dark:shadow-none transition rounded-2xl"
-            >
-              <item.icon className="mx-auto mb-4 h-10 w-10 text-[#2E4864] dark:text-[#5c9cff]" />
-              <h2 className="text-4xl font-extrabold text-[#2E4864] dark:text-[#5c9cff]">
-                {item.num}
-              </h2>
-              <p className="mt-2 text-gray-700 dark:text-gray-300">
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Timeline Section */}
-      <section className="py-20 max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-10 text-[#2E4864] dark:text-[#5c9cff]">
-          Milestone Timeline
-        </h2>
-        <div className="relative border-l-4 border-[#2E4864] dark:border-[#5c9cff] pl-8 space-y-10">
-          {[
-            {
-              year: "2021",
-              icon: Rocket,
-              desc: "Launched our first AI-powered CRM platform.",
-            },
-            {
-              year: "2022",
-              icon: Globe,
-              desc: "Expanded our services to 30+ countries worldwide.",
-            },
-            {
-              year: "2023",
-              icon: Users,
-              desc: "Surpassed 100 million active users across platforms.",
-            },
-            {
-              year: "2024",
-              icon: Award,
-              desc: "Recognized among fastest-growing AI firms.",
-            },
-            {
-              year: "2025",
-              icon: Target,
-              desc: "Global rollout of next-gen AI SaaS & automation tools.",
-            },
-          ].map((item, i) => (
-            <div key={i} className="relative">
-              <div className="absolute -left-4 top-2 w-4 h-4 bg-[#2E4864] dark:bg-[#5c9cff] rounded-full"></div>
-              <div className="flex items-center gap-3">
-                <item.icon className="h-6 w-6 text-[#2E4864] dark:text-[#5c9cff]" />
-                <h3 className="text-xl font-semibold text-[#2E4864] dark:text-[#5c9cff]">
-                  {item.year}
-                </h3>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 mt-1">
-                {item.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Recognition Section */}
-      <section className="py-20 bg-gray-50 dark:bg-[#111820] text-center px-6 transition-colors duration-300">
-        <h2 className="text-3xl font-bold mb-8 text-[#2E4864] dark:text-[#5c9cff]">
-          Recognitions & Highlights
-        </h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {[
-            {
-              icon: Star,
-              title: "Top Innovator 2023",
-              desc: "Honored as one of the leading AI-driven startups redefining digital solutions.",
-            },
-            {
-              icon: Award,
-              title: "Best Tech Partner",
-              desc: "Awarded for exceptional collaboration and consistent project success rates.",
-            },
-            {
-              icon: CheckCircle2,
-              title: "ISO Certified",
-              desc: "Recognized for meeting international quality and data security standards.",
-            },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="bg-white dark:bg-[#18222e] p-8 rounded-2xl shadow-md hover:shadow-xl transition"
-            >
-              <item.icon className="mx-auto mb-4 h-10 w-10 text-[#2E4864] dark:text-[#5c9cff]" />
-              <h3 className="text-xl font-semibold mb-2 text-[#2E4864] dark:text-[#5c9cff]">
-                {item.title}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Testimonial Section */}
-      <section className="py-24 bg-[#2E4864] dark:bg-[#10151d] text-white text-center px-6 transition-colors duration-300">
-        <div className="max-w-3xl mx-auto">
-          <blockquote className="text-2xl md:text-3xl italic font-light">
-            “Partnering with Wortholic accelerated our AI transformation — their
-            precision, creativity, and commitment were unmatched.”
-          </blockquote>
-          <p className="mt-6 font-semibold text-lg">
-            — Sarah Thompson, CTO at NovaTech Global
-          </p>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 text-center px-6">
-        <h2 className="text-3xl font-bold mb-4 text-[#2E4864] dark:text-[#5c9cff]">
-          Let’s Achieve More Together
-        </h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-          Join hands with Wortholic to build AI-driven solutions that redefine
-          success.
-        </p>
-        <a
-          href="/contact"
-          className="bg-[#2E4864] dark:bg-[#5c9cff] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#22364b] dark:hover:bg-[#4882d6] transition"
+        {/* Trophy Achievement Section */}
+        <div
+          className="relative max-w-5xl mx-auto"
+          style={{ minHeight: "700px" }}
         >
-          Schedule a Meeting
-        </a>
-      </section>
+          {/* Center Trophy */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+            <div className="relative">
+              {/* Trophy SVG */}
+              <svg className="w-56 h-56" viewBox="0 0 200 200" fill="none">
+                {/* Trophy Cup Body */}
+                <path
+                  d="M70 60 L70 40 L130 40 L130 60 Q130 95 100 105 Q70 95 70 60 Z"
+                  fill="#FDB913"
+                  stroke="#D4920B"
+                  strokeWidth="2"
+                />
+                {/* Left Handle */}
+                <path
+                  d="M70 50 Q50 50 50 62 Q50 74 70 74"
+                  fill="none"
+                  stroke="#FDB913"
+                  strokeWidth="6"
+                />
+                {/* Right Handle */}
+                <path
+                  d="M130 50 Q150 50 150 62 Q150 74 130 74"
+                  fill="none"
+                  stroke="#FDB913"
+                  strokeWidth="6"
+                />
+                {/* Trophy Base - Stem */}
+                <rect
+                  x="90"
+                  y="105"
+                  width="20"
+                  height="20"
+                  fill="#FDB913"
+                  stroke="#D4920B"
+                  strokeWidth="2"
+                />
+                {/* Trophy Base - Bottom */}
+                <rect
+                  x="75"
+                  y="125"
+                  width="50"
+                  height="8"
+                  fill="#FDB913"
+                  stroke="#D4920B"
+                  strokeWidth="2"
+                  rx="2"
+                />
+                <rect
+                  x="65"
+                  y="133"
+                  width="70"
+                  height="12"
+                  fill="#FDB913"
+                  stroke="#D4920B"
+                  strokeWidth="2"
+                  rx="2"
+                />
+              </svg>
+
+              {/* Stars around trophy */}
+              <Star className="absolute -top-2 left-1/2 -translate-x-1/2 w-10 h-10 text-yellow-400 fill-yellow-400" />
+              <Star className="absolute top-16 -left-6 w-7 h-7 text-pink-500 fill-pink-500" />
+              <Star className="absolute top-16 -right-6 w-7 h-7 text-pink-500 fill-pink-500" />
+              <Star className="absolute bottom-20 -left-8 w-7 h-7 text-gray-500 fill-gray-500" />
+              <Star className="absolute bottom-20 -right-8 w-7 h-7 text-gray-500 fill-gray-500" />
+            </div>
+          </div>
+          {/* Decorative Circles */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[470px] h-[470px] border-2 border-dashed border-gray-200 dark:border-gray-700 rounded-full pointer-events-none"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[455px] h-[455px] border border-[#A1E4E4] dark:border-gray-600 rounded-full pointer-events-none bg-[#A1E4E4] dark:bg-gray-600"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border-2 border-dashed border-gray-200 dark:border-gray-700 rounded-full pointer-events-none"></div>
+
+          {/* Top Achievement */}
+          <div className="absolute -top-30 left-1/2 -translate-x-1/2 w-80">
+            <div className="bg-white dark:bg-[#18222e] p-6 rounded-xl shadow-lg border-2 border-gray-100 dark:border-gray-700">
+              <div className="flex justify-center mb-3">
+                <div className="bg-yellow-100 dark:bg-yellow-900/30 p-3 rounded-full">
+                  <Briefcase className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
+                </div>
+              </div>
+              <h3 className="text-center text-yellow-600 dark:text-yellow-400 font-bold text-base mb-2">
+                Rapid Expansion
+              </h3>
+              <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                Add achievement details here
+              </p>
+            </div>
+            {/* Connecting Line */}
+            <div className="absolute top-full left-1/2 -translate-x-1/2 w-0.5 h-18 bg-gradient-to-b from-gray-300 to-transparent dark:from-gray-600"></div>
+          </div>
+
+          {/* Right Top Achievement */}
+          <div className="absolute top-24 right-0 w-80">
+            <div className="flex items-center gap-0">
+              <div className="h-0.5 w-28 bg-gradient-to-l from-gray-300 to-transparent dark:from-gray-600"></div>
+              <div className="bg-white dark:bg-[#18222e] p-6 rounded-xl shadow-lg border-2 border-gray-100 dark:border-gray-700 flex-1">
+                <div className="flex justify-center mb-3">
+                  <div className="bg-pink-100 dark:bg-pink-900/30 p-3 rounded-full">
+                    <Award className="h-8 w-8 text-pink-600 dark:text-pink-400" />
+                  </div>
+                </div>
+                <h3 className="text-center text-pink-600 dark:text-pink-400 font-bold text-base mb-2">
+                  Add Achievement here
+                </h3>
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                  Add achievement details here
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Bottom Achievement */}
+          <div className="absolute bottom-24 right-0 w-80">
+            <div className="flex items-center gap-0">
+              <div className="h-0.5 w-28 bg-gradient-to-l from-gray-300 to-transparent dark:from-gray-600"></div>
+              <div className="bg-white dark:bg-[#18222e] p-6 rounded-xl shadow-lg border-2 border-gray-100 dark:border-gray-700 flex-1">
+                <div className="flex justify-center mb-3">
+                  <div className="bg-gray-100 dark:bg-gray-800/30 p-3 rounded-full">
+                    <Award className="h-8 w-8 text-gray-600 dark:text-gray-300" />
+                  </div>
+                </div>
+                <h3 className="text-center text-gray-700 dark:text-gray-300 font-bold text-base mb-2">
+                  Add Achievement here
+                </h3>
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                  Add achievement details here
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Left Top Achievement */}
+          <div className="absolute top-23 left-0 w-80">
+            <div className="flex items-center gap-0">
+              <div className="bg-white dark:bg-[#18222e] p-6 rounded-xl shadow-lg border-2 border-gray-100 dark:border-gray-700 flex-1">
+                <div className="flex justify-center mb-3">
+                  <div className="bg-pink-100 dark:bg-pink-900/30 p-3 rounded-full">
+                    <Globe className="h-8 w-8 text-pink-600 dark:text-pink-400" />
+                  </div>
+                </div>
+                <h3 className="text-center text-pink-600 dark:text-pink-400 font-bold text-base mb-2">
+                  Global Sales increased
+                </h3>
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                  Add achievement details here
+                </p>
+              </div>
+              <div className="h-0.5 w-28 bg-gradient-to-r from-gray-300 to-transparent dark:from-gray-600"></div>
+            </div>
+          </div>
+
+          {/* Left Bottom Achievement */}
+          <div className="absolute bottom-25 left-0 w-80">
+            <div className="flex items-center gap-0">
+              <div className="bg-white dark:bg-[#18222e] p-6 rounded-xl shadow-lg border-2 border-gray-100 dark:border-gray-700 flex-1">
+                <div className="flex justify-center mb-3">
+                  <div className="bg-gray-100 dark:bg-gray-800/30 p-3 rounded-full">
+                    <CheckCircle2 className="h-8 w-8 text-gray-600 dark:text-gray-300" />
+                  </div>
+                </div>
+                <h3 className="text-center text-gray-700 dark:text-gray-300 font-bold text-base mb-2">
+                  Awarded the Most
+                </h3>
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                  Add achievement details here
+                </p>
+              </div>
+              <div className="h-0.5 w-28 bg-gradient-to-r from-gray-300 to-transparent dark:from-gray-600"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Stats Section */}
+        <section className="mt-0 py-6">
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4 text-center">
+            {[
+              { icon: Briefcase, num: "500+", text: "Projects Delivered" },
+              { icon: Users, num: "300M+", text: "End-users Impacted" },
+              { icon: Globe, num: "50+", text: "Countries Served" },
+              { icon: CheckCircle2, num: "95%", text: "Client Retention Rate" },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-white dark:bg-[#18222e] p-6 rounded-xl shadow-lg border-2 border-gray-100 dark:border-gray-700"
+              >
+                <item.icon className="mx-auto mb-4 h-10 w-10 text-[#2E4864] dark:text-gray-300" />
+                <h2 className="text-4xl font-extrabold text-[#2E4864] dark:text-gray-300">
+                  {item.num}
+                </h2>
+                <p className="mt-2 text-gray-700 dark:text-gray-300">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </main>
   );
 };
