@@ -74,7 +74,7 @@ const Hero = () => {
               <div className="flex h-[35px] w-[160px] items-center justify-center overflow-hidden rounded-[60px] border border-gray-300 bg-white/10 pt-1 pr-3 shadow-md backdrop-blur-md dark:border-gray-700 dark:bg-white/5">
                 <Image
                   src="/images/hero/3.png"
-                  alt="GitHub Copilot"
+                  alt="Consistency"
                   width={140}
                   height={25}
                   className="scale-150 bg-transparent object-contain dark:brightness-200 dark:invert"
@@ -84,7 +84,7 @@ const Hero = () => {
               <div className="mr-20 flex h-[35px] items-center justify-center overflow-hidden rounded-[60px] border border-gray-300 bg-white/10 p-1 shadow-md backdrop-blur-md dark:border-gray-700 dark:bg-white/5">
                 <Image
                   src="/images/hero/1.png"
-                  alt="Cursor AI"
+                  alt="Quality"
                   width={140}
                   height={40}
                   className="scale-150 bg-transparent object-contain dark:brightness-200 dark:invert"
@@ -141,7 +141,7 @@ const Hero = () => {
               <div className="flex h-[35px] items-center justify-center overflow-hidden rounded-[60px] border border-gray-300 bg-white/10 pt-1 pr-4 shadow-md backdrop-blur-md dark:border-gray-700 dark:bg-white/5">
                 <Image
                   src="/images/hero/2.png"
-                  alt="Gemini AI"
+                  alt="Reliability"
                   width={140}
                   height={40}
                   className="scale-150 bg-transparent object-contain dark:brightness-200 dark:invert"
@@ -151,7 +151,7 @@ const Hero = () => {
               <div className="ml-20 flex h-[35px] items-center justify-center overflow-hidden rounded-[60px] border border-gray-300 bg-white/10 pr-2 pb-2 shadow-md backdrop-blur-md dark:border-gray-700 dark:bg-white/5">
                 <Image
                   src="/images/hero/4.png"
-                  alt="OpenAI"
+                  alt="Transparency"
                   width={140}
                   height={40}
                   className="scale-135 bg-transparent object-contain dark:brightness-200 dark:invert"

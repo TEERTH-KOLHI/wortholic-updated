@@ -232,7 +232,7 @@ export const cardsDataByPage = [
       title: "TechLink ",
       desc: "TechLink appears to be either IT Staffing & Consulting Service",
       img: "/images/cards/techlink.png",
-      link: "https://www.gditrading.com/",
+      link: "https://www.techlinksystems.com/",
     },
     {
       title: "Athlead.ai",

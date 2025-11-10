@@ -69,7 +69,10 @@ const ServiceCards = () => {
     { src: "/images/companies/vultron.svg", url: "https://www.vultron.com" },
     { src: "/images/companies/tutorUp.webp", url: "https://www.tutorup.com" },
     { src: "/images/companies/troveo.svg", url: "https://www.troveo.com" },
-    { src: "/images/companies/techLink.png", url: "https://www.techlink.com" },
+    {
+      src: "/images/companies/techLink.png",
+      url: "https://www.techlinksystems.com/",
+    },
     { src: "/images/companies/2play.png", url: "https://www.2play.com" },
     { src: "/images/companies/Tribe.webp", url: "https://www.tribe.so" },
     { src: "/images/companies/atelier-ai.svg", url: "https://www.atelier.net" },
@@ -81,7 +84,7 @@ const ServiceCards = () => {
     },
     {
       src: "/images/companies/microfactory.svg",
-      url: "https://www.microfactory.io",
+      url: "https://microfactory.ai/",
     },
     {
       src: "/images/companies/picklezone.svg",
@@ -89,13 +92,13 @@ const ServiceCards = () => {
     },
     {
       src: "/images/companies/Mofilo_Light.avif",
-      url: "https://www.mofilo.com",
+      url: "https://www.mofilo.app/",
     },
-    { src: "/images/companies/phlare-lms.svg", url: "https://www.phlare.com" },
-    { src: "/images/companies/opsfi-white.png", url: "https://www.opsfi.com" },
+    { src: "/images/companies/phlare-lms.svg", url: "https://phlare.org/" },
+    { src: "/images/companies/opsfi-white.png", url: "https://opsfi.co/" },
     {
       src: "/images/companies/optimusAi-labs.png",
-      url: "https://www.optimusai.com",
+      url: "https://optimusai.ai/",
     },
   ];
 
@@ -172,7 +175,7 @@ const ServiceCards = () => {
                     />
                   </a>
                 </div>
-              ),
+              )
             )}
           </div>
         </div>
