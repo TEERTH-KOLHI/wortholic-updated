@@ -2,6 +2,7 @@
 import React from "react";
 import {
   Award,
+  Brain,
   Globe,
   Users,
   Briefcase,
@@ -113,7 +114,7 @@ const Achievements = () => {
                 Rapid Expansion
               </h3>
               <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                Add achievement details here
+                Expanded globally with AI-powered business solutions
               </p>
             </div>
             {/* Connecting Line */}
@@ -131,10 +132,10 @@ const Achievements = () => {
                   </div>
                 </div>
                 <h3 className="text-center text-pink-600 dark:text-pink-400 font-bold text-base mb-2">
-                  Add Achievement here
+                  Trusted by Leading Brands
                 </h3>
                 <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                  Add achievement details here
+                  Partnered with top companies worldwide
                 </p>
               </div>
             </div>
@@ -147,14 +148,14 @@ const Achievements = () => {
               <div className="bg-white dark:bg-[#18222e] p-6 rounded-xl shadow-lg border-2 border-gray-100 dark:border-gray-700 flex-1">
                 <div className="flex justify-center mb-3">
                   <div className="bg-gray-100 dark:bg-gray-800/30 p-3 rounded-full">
-                    <Award className="h-8 w-8 text-gray-600 dark:text-gray-300" />
+                    <Brain className="h-8 w-8 text-gray-600 dark:text-gray-300" />
                   </div>
                 </div>
                 <h3 className="text-center text-gray-700 dark:text-gray-300 font-bold text-base mb-2">
-                  Add Achievement here
+                  Excellence in AI Innovation
                 </h3>
                 <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                  Add achievement details here
+                  Pioneered next-gen AI and automation tools
                 </p>
               </div>
             </div>
@@ -173,7 +174,7 @@ const Achievements = () => {
                   Global Sales increased
                 </h3>
                 <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                  Add achievement details here
+                  Boosted international client base through innovation
                 </p>
               </div>
               <div className="h-0.5 w-28 bg-gradient-to-r from-gray-300 to-transparent dark:from-gray-600"></div>
@@ -193,7 +194,7 @@ const Achievements = () => {
                   Awarded the Most
                 </h3>
                 <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-                  Add achievement details here
+                  Recognized for excellence in AI and automation
                 </p>
               </div>
               <div className="h-0.5 w-28 bg-gradient-to-r from-gray-300 to-transparent dark:from-gray-600"></div>
@@ -205,9 +206,13 @@ const Achievements = () => {
         <section className="mt-0 py-6">
           <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4 text-center">
             {[
-              { icon: Briefcase, num: "500+", text: "Projects Delivered" },
-              { icon: Users, num: "300M+", text: "End-users Impacted" },
-              { icon: Globe, num: "50+", text: "Countries Served" },
+              {
+                icon: Briefcase,
+                num: "150+",
+                text: "Solutions delivered to clients",
+              },
+              { icon: Users, num: "150+", text: "Satisfied & Happy clients" },
+              { icon: Globe, num: "20+", text: "Countries Served" },
               { icon: CheckCircle2, num: "95%", text: "Client Retention Rate" },
             ].map((item, i) => (
               <div
